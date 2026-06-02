@@ -4,7 +4,7 @@
 
 * Team: Travel Reputation Lab Team
 * Members: Nguyễn Hoàng Lân 2A202600899
-* Provider/model: OpenRouter / TO_FILL_MODEL_NAME
+* Provider/model: OpenRouter / travel
 
 ---
 
