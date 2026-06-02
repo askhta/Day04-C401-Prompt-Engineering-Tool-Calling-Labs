@@ -1,1 +1,5 @@
 version,author,changed_artifact,artifact_version,prompt_hash,tools_hash,reason,hypothesis,metric_before,metric_after,run_file
+v0,team,none,,,,Baseline run before changes,Establish starting evidence from base eval,N/A,TO_FILL_AFTER_RUN,TO_FILL_AFTER_RUN
+v1,team,"artifacts/system_prompt.md; artifacts/tools.yaml",,,,Clarify routing rules for travel reputation use case,"Agent will better distinguish web_search vs read_url vs search_tweets vs get_user_tweets",TO_FILL_AFTER_V0,TO_FILL_AFTER_V1,TO_FILL_AFTER_RUN
+v2,team,artifacts/system_prompt.md,,,,Add missing-info rules for service name location timeframe URL handle,"Agent will call ask_user instead of guessing missing tourism reputation details",TO_FILL_AFTER_V1,TO_FILL_AFTER_V2,TO_FILL_AFTER_RUN
+v3,team,"artifacts/system_prompt.md; data/eval_group.json; artifacts/REPORT.md",,,,Finalize tourism classification response guardrails and group eval,"Agent will be safer and more relevant for Travel Reputation & Customer Response Agent",TO_FILL_AFTER_V2,TO_FILL_AFTER_V3_GROUP,TO_FILL_AFTER_RUN

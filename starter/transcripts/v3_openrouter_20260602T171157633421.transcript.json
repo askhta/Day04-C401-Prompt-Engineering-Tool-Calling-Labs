@@ -1,0 +1,1146 @@
+{
+  "transcript_id": "v3_openrouter_20260602T171157633421",
+  "version": "v3",
+  "artifact_version": "v3+pe62adfc060d3+td852f8793b76",
+  "prompt_hash": "e62adfc060d3783dea1dc8cccd26dd6fd230c1652f309dfc94429bbefe8a3863",
+  "tools_hash": "d852f8793b76a88a809082c59544377546dfb7f66e4111764c704248ed084e68",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "system_prompt": "D:\\VinAi\\Lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs\\starter\\artifacts\\system_prompt.md",
+  "tools": "D:\\VinAi\\Lab4\\Day04-C401-Prompt-Engineering-Tool-Calling-Labs\\starter\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-06-02T17:11:57",
+  "updated_at": "2026-06-02T17:25:21",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-06-02T17:12:08",
+      "user": "Tìm các bài viết gần đây về phản ánh tiêu cực đối với Khách sạn Biển Xanh ở Đà Nẵng trong tuần này.",
+      "status": "answered",
+      "assistant_text": "Hiện tại, không có bài viết nào gần đây về phản ánh tiêu cực đối với Khách sạn Biển Xanh ở Đà Nẵng trong tuần này. Dưới đây là một số bài viết liên quan đến các chủ đề khác:\n\n1. **[A New Asia Next World-class Destination Takes Shape In North Movement](https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement)** - Nguồn: natlawreview.com\n   - Tóm tắt: Bài viết nói về sự phát triển của Nha Trang như một điểm đến du lịch mới nổi ở Đông Nam Á.\n\n2. **[Developers running into problems trying to build data centers](https://www.cbsnews.com/boston/video/developers-running-into-problems-trying-to-build-data-centers/)** - Nguồn: cbsnews.com\n   - Tóm tắt: Bài viết đề cập đến sự phản đối ngày càng tăng đối với các trung tâm dữ liệu trên toàn quốc.\n\n3. **[Family of Centennial Beach drowning victim sues Naperville Park District](https://www.chicagotribune.com/2026/05/27/naperville-park-lawsuit-death-drowning-centennial/)** - Nguồn: chicagotribune.com\n   - Tóm tắt: Gia đình của một nạn nhân đuối nước đã kiện khu vực công viên Naperville.\n\n4. **[New Hampshire data-center opponents planned to pack meeting — and the developer withdrew](https://www.businessinsider.com/developer-withdraws-new-hampshire-data-center-plan-after-local-uproar-2026-5)** - Nguồn: businessinsider.com\n   - Tóm tắt: Một nhà phát triển đã rút lui khỏi kế hoạch xây dựng trung tâm dữ liệu sau khi gặp phải sự phản đối mạnh mẽ từ cộng đồng.\n\n5. **[Chinese dissident is detained in South Korea after fleeing by inflatable boat](https://www.nbcnews.com/world/asia/chinese-dissident-detained-south-korea-fleeing-inflatable-boat-rcna347063)** - Nguồn: nbcnews.com\n   - Tóm tắt: Một nhà bất đồng chính kiến Trung Quốc đã bị bắt giữ tại Hàn Quốc sau khi trốn thoát bằng thuyền phao.\n\nNếu bạn cần thông tin cụ thể hơn hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "phản ánh tiêu cực Khách sạn Biển Xanh Đà Nẵng",
+                "topic": "news",
+                "timeframe": "week"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "phản ánh tiêu cực Khách sạn Biển Xanh Đà Nẵng",
+                "topic": "news",
+                "timeframe": "week"
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "phản ánh tiêu cực Khách sạn Biển Xanh Đà Nẵng",
+                "topic": "news",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "A New Asia Next World-class Destination Takes Shape In North Movement - The National Law Review",
+                    "url": "https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement",
+                    "source": "natlawreview.com",
+                    "summary": "NHA TRANG, VIETNAM, May 27, 2026 /EINPresswire.com/ -- North Nha Trang is experiencing a distinct geographical evolution, shifting the region’s social and tourism energy toward an open, integrated model of coastal living. Rather than measuring its success through rigid statistics, the destination's appeal is best felt through its vibrant, undeniable pulse - a thriving popularity that has naturally earned it recognition from international media as an emerging cultural and lifestyle hub in Southeast Asia. The enclave’s identity is anchored by its human energy and a continuous coastal rhythm that moves seamlessly from day to night. Rather than functioning as a standalone real estate product, the oceanfront tower serves as a fluid gateway for individuals seeking to weave their daily lives into the area's established lifestyle, offering immediate access to the neighborhood's active social networks and cultural calendar. Envisioned as an integrated destination ecosystem, the coastal enclave continues to expand its cultural and social framework to support the region's evolution.",
+                    "score": 0.035924714
+                  },
+                  {
+                    "title": "Developers running into problems trying to build data centers - CBS News",
+                    "url": "https://www.cbsnews.com/boston/video/developers-running-into-problems-trying-to-build-data-centers/",
+                    "source": "cbsnews.com",
+                    "summary": "# Developers running into problems trying to build data centers. Nationwide, there is a growing backlash to data centers that power AI and the internet.",
+                    "score": 0.015062517
+                  },
+                  {
+                    "title": "Family of Centennial Beach drowning victim sues Naperville Park District - Chicago Tribune",
+                    "url": "https://www.chicagotribune.com/2026/05/27/naperville-park-lawsuit-death-drowning-centennial/",
+                    "source": "chicagotribune.com",
+                    "summary": "Naperville Sun |   Family of Centennial Beach drowning victim sues…. # Family of Centennial Beach drowning victim sues Naperville Park District. The family of a man who died last year after being found underwater at Centennial Beach has filed a wrongful death lawsuit against the Naperville Park District. The lawsuit alleges the park district’s delayed emergency response and the “murky” water at Centennial Beach led to a man’s death. Rosales was last seen in the deep-water area of the beach about 5:20 p.m., the suit said. At least one lifeguard was notified of his disappearance about 5:25 p.m. and staff were informed that Rosales did not answer his cellphone when called about 5:27 p.m. The facility was cleared about 5:43 p.m. for a search, police arrived about 5:45 p.m., and Rosales was located and removed from the water about 15 minutes later, the suit said. It was not until about 20 minutes after park district staff was told that Rosales was missing that the facility was cleared and an underwater search done, leaving Rosales “submerged for a prolonged and life-threatening period,” the suit said.",
+                    "score": 0.01478686
+                  },
+                  {
+                    "title": "New Hampshire data-center opponents planned to pack meeting — and the developer withdrew - Business Insider",
+                    "url": "https://www.businessinsider.com/developer-withdraws-new-hampshire-data-center-plan-after-local-uproar-2026-5",
+                    "source": "businessinsider.com",
+                    "summary": "Hours before a scheduled meeting on a Nottingham, New Hampshire, data center proposal — which had to be moved to a larger venue because of growing backlash — the developer abruptly withdrew the plans. \"There was a lot of opposition, so I'm not surprised,\" a coordinator for Nottingham's Planning Department, Tracey Stickney, told Business Insider on Tuesday, adding that it was \"nice\" to see people come together and care about their local community. The proposed project, backed by local developer Thomas Moulton through Nottingham Business Park LLC, had sparked mounting backlash from residents worried about environmental impacts, noise, and the transformation of their rural town. I value the beauty of New Hampshire, and I would like to keep it, especially in a small town like Nottingham, where it's not very industrial at all,\" Weit told Business Insider.",
+                    "score": 0.014617106
+                  },
+                  {
+                    "title": "Chinese dissident is detained in South Korea after fleeing by inflatable boat - NBC News",
+                    "url": "https://www.nbcnews.com/world/asia/chinese-dissident-detained-south-korea-fleeing-inflatable-boat-rcna347063",
+                    "source": "nbcnews.com",
+                    "summary": "# Chinese dissident is detained in South Korea after fleeing by inflatable boat. Rights groups urged South Korea not to repatriate Dong Guangping, 68, who has previously tried to escape three times only to be returned to China. SEOUL, South Korea — A Chinese dissident who fled the country aboard an inflatable boat has been detained in South Korea, with rights groups calling for him to be granted asylum after three previous escape attempts saw him returned to China. Dong Guangping, 68, a former police officer who has been imprisoned multiple times over his criticism of China’s ruling Communist Party, was detained late Monday by the South Korean coast guard, a spokesperson told NBC News on Wednesday. According to the New York-based rights group Human Rights in China (HRIC), Dong, who is from the central Chinese city of Zhengzhou, was dismissed from the police force in 1999 after he signed a petition supporting victims of the 1989 Tiananmen Square crackdown on pro-democracy protesters in Beijing.",
+                    "score": 0.013234325
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, không có bài viết nào gần đây về phản ánh tiêu cực đối với Khách sạn Biển Xanh ở Đà Nẵng trong tuần này. Dưới đây là một số bài viết liên quan đến các chủ đề khác:\n\n1. **[A New Asia Next World-class Destination Takes Shape In North Movement](https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement)** - Nguồn: natlawreview.com\n   - Tóm tắt: Bài viết nói về sự phát triển của Nha Trang như một điểm đến du lịch mới nổi ở Đông Nam Á.\n\n2. **[Developers running into problems trying to build data centers](https://www.cbsnews.com/boston/video/developers-running-into-problems-trying-to-build-data-centers/)** - Nguồn: cbsnews.com\n   - Tóm tắt: Bài viết đề cập đến sự phản đối ngày càng tăng đối với các trung tâm dữ liệu trên toàn quốc.\n\n3. **[Family of Centennial Beach drowning victim sues Naperville Park District](https://www.chicagotribune.com/2026/05/27/naperville-park-lawsuit-death-drowning-centennial/)** - Nguồn: chicagotribune.com\n   - Tóm tắt: Gia đình của một nạn nhân đuối nước đã kiện khu vực công viên Naperville.\n\n4. **[New Hampshire data-center opponents planned to pack meeting — and the developer withdrew](https://www.businessinsider.com/developer-withdraws-new-hampshire-data-center-plan-after-local-uproar-2026-5)** - Nguồn: businessinsider.com\n   - Tóm tắt: Một nhà phát triển đã rút lui khỏi kế hoạch xây dựng trung tâm dữ liệu sau khi gặp phải sự phản đối mạnh mẽ từ cộng đồng.\n\n5. **[Chinese dissident is detained in South Korea after fleeing by inflatable boat](https://www.nbcnews.com/world/asia/chinese-dissident-detained-south-korea-fleeing-inflatable-boat-rcna347063)** - Nguồn: nbcnews.com\n   - Tóm tắt: Một nhà bất đồng chính kiến Trung Quốc đã bị bắt giữ tại Hàn Quốc sau khi trốn thoát bằng thuyền phao.\n\nNếu bạn cần thông tin cụ thể hơn hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "phản ánh tiêu cực Khách sạn Biển Xanh Đà Nẵng",
+            "topic": "news",
+            "timeframe": "week"
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "phản ánh tiêu cực Khách sạn Biển Xanh Đà Nẵng",
+            "topic": "news",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "A New Asia Next World-class Destination Takes Shape In North Movement - The National Law Review",
+                "url": "https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement",
+                "source": "natlawreview.com",
+                "summary": "NHA TRANG, VIETNAM, May 27, 2026 /EINPresswire.com/ -- North Nha Trang is experiencing a distinct geographical evolution, shifting the region’s social and tourism energy toward an open, integrated model of coastal living. Rather than measuring its success through rigid statistics, the destination's appeal is best felt through its vibrant, undeniable pulse - a thriving popularity that has naturally earned it recognition from international media as an emerging cultural and lifestyle hub in Southeast Asia. The enclave’s identity is anchored by its human energy and a continuous coastal rhythm that moves seamlessly from day to night. Rather than functioning as a standalone real estate product, the oceanfront tower serves as a fluid gateway for individuals seeking to weave their daily lives into the area's established lifestyle, offering immediate access to the neighborhood's active social networks and cultural calendar. Envisioned as an integrated destination ecosystem, the coastal enclave continues to expand its cultural and social framework to support the region's evolution.",
+                "score": 0.035924714
+              },
+              {
+                "title": "Developers running into problems trying to build data centers - CBS News",
+                "url": "https://www.cbsnews.com/boston/video/developers-running-into-problems-trying-to-build-data-centers/",
+                "source": "cbsnews.com",
+                "summary": "# Developers running into problems trying to build data centers. Nationwide, there is a growing backlash to data centers that power AI and the internet.",
+                "score": 0.015062517
+              },
+              {
+                "title": "Family of Centennial Beach drowning victim sues Naperville Park District - Chicago Tribune",
+                "url": "https://www.chicagotribune.com/2026/05/27/naperville-park-lawsuit-death-drowning-centennial/",
+                "source": "chicagotribune.com",
+                "summary": "Naperville Sun |   Family of Centennial Beach drowning victim sues…. # Family of Centennial Beach drowning victim sues Naperville Park District. The family of a man who died last year after being found underwater at Centennial Beach has filed a wrongful death lawsuit against the Naperville Park District. The lawsuit alleges the park district’s delayed emergency response and the “murky” water at Centennial Beach led to a man’s death. Rosales was last seen in the deep-water area of the beach about 5:20 p.m., the suit said. At least one lifeguard was notified of his disappearance about 5:25 p.m. and staff were informed that Rosales did not answer his cellphone when called about 5:27 p.m. The facility was cleared about 5:43 p.m. for a search, police arrived about 5:45 p.m., and Rosales was located and removed from the water about 15 minutes later, the suit said. It was not until about 20 minutes after park district staff was told that Rosales was missing that the facility was cleared and an underwater search done, leaving Rosales “submerged for a prolonged and life-threatening period,” the suit said.",
+                "score": 0.01478686
+              },
+              {
+                "title": "New Hampshire data-center opponents planned to pack meeting — and the developer withdrew - Business Insider",
+                "url": "https://www.businessinsider.com/developer-withdraws-new-hampshire-data-center-plan-after-local-uproar-2026-5",
+                "source": "businessinsider.com",
+                "summary": "Hours before a scheduled meeting on a Nottingham, New Hampshire, data center proposal — which had to be moved to a larger venue because of growing backlash — the developer abruptly withdrew the plans. \"There was a lot of opposition, so I'm not surprised,\" a coordinator for Nottingham's Planning Department, Tracey Stickney, told Business Insider on Tuesday, adding that it was \"nice\" to see people come together and care about their local community. The proposed project, backed by local developer Thomas Moulton through Nottingham Business Park LLC, had sparked mounting backlash from residents worried about environmental impacts, noise, and the transformation of their rural town. I value the beauty of New Hampshire, and I would like to keep it, especially in a small town like Nottingham, where it's not very industrial at all,\" Weit told Business Insider.",
+                "score": 0.014617106
+              },
+              {
+                "title": "Chinese dissident is detained in South Korea after fleeing by inflatable boat - NBC News",
+                "url": "https://www.nbcnews.com/world/asia/chinese-dissident-detained-south-korea-fleeing-inflatable-boat-rcna347063",
+                "source": "nbcnews.com",
+                "summary": "# Chinese dissident is detained in South Korea after fleeing by inflatable boat. Rights groups urged South Korea not to repatriate Dong Guangping, 68, who has previously tried to escape three times only to be returned to China. SEOUL, South Korea — A Chinese dissident who fled the country aboard an inflatable boat has been detained in South Korea, with rights groups calling for him to be granted asylum after three previous escape attempts saw him returned to China. Dong Guangping, 68, a former police officer who has been imprisoned multiple times over his criticism of China’s ruling Communist Party, was detained late Monday by the South Korean coast guard, a spokesperson told NBC News on Wednesday. According to the New York-based rights group Human Rights in China (HRIC), Dong, who is from the central Chinese city of Zhengzhou, was dismissed from the police force in 1999 after he signed a petition supporting victims of the 1989 Tiananmen Square crackdown on pro-democracy protesters in Beijing.",
+                "score": 0.013234325
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:12:22"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-06-02T17:13:32",
+      "user": "Theo dõi phốt gần đây giúp tôi",
+      "status": "answered",
+      "assistant_text": "Bạn có thể cung cấp tên dịch vụ du lịch, khách sạn, nhà hàng hoặc địa điểm cụ thể mà bạn muốn theo dõi phốt gần đây không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Bạn có thể cung cấp tên dịch vụ du lịch, khách sạn, nhà hàng hoặc địa điểm cụ thể mà bạn muốn theo dõi phốt gần đây không?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-06-02T17:13:35"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-06-02T17:14:42",
+      "user": "Về Nhà hàng Hải Sản Xanh ở Hạ Long trong 7 ngày gần đây, tìm trên web.",
+      "status": "answered",
+      "assistant_text": "Trong 7 ngày gần đây, không có thông tin cụ thể nào về phản ánh tiêu cực đối với Nhà hàng Hải Sản Xanh ở Hạ Long. Tuy nhiên, dưới đây là một số bài viết liên quan đến hải sản và nhà hàng trong khu vực:\n\n1. **[Nhà Hàng Hồng Hạnh 6 Review](https://www.tiktok.com/discover/nh%C3%A0-h%C3%A0ng-h%E1%BB%93ng-h%E1%BA%A1nh-6-review)** - Nguồn: tiktok.com\n   - Tóm tắt: Hải sản tươi sống ngon nhất Hạ Long với các món đặc sản từ hải sản như cua, ghẹ, tôm bề bề, và cá mú.\n\n2. **[Sashimi Cá Trích 1️⃣5️⃣8️⃣](https://www.instagram.com/reel/DY88Uo_TSVL)** - Nguồn: instagram.com\n   - Tóm tắt: Quán vừa mới tân trang lại và có sushi chay đầu tiên tại Vũng Tàu. Sashimi ở đây rất ngon và tươi.\n\n3. **[Fan Buffet Poseidon Lê Văn Lương? Điểm danh ngay!](https://www.tiktok.com/@buffet.poseidon/video/7644546933977042183)** - Nguồn: tiktok.com\n   - Tóm tắt: Gợi ý nội dung chia sẻ về chất lượng hải sản và các món ăn ưa thích.\n\n4. **[-22-1-Tôi che giấu thân phận người đứng đầu đế chế hải sản ...](https://www.facebook.com/61583824670102/videos/-22-1-t%C3%B4i-che-gi%E1%BA%A5u-th%C3%A2n-ph%E1%BA%ADn-ng%C6%B0%E1%BB%9Di-%C4%91%E1%BB%A9ng-%C4%91%E1%BA%A7u-%C4%91%E1%BA%BF-ch%E1%BA%BF-h%E1%BA%A3i-s%E1%BA%A3n/1699561191176127)** - Nguồn: facebook.com\n   - Tóm tắt: Một video liên quan đến sự cạnh tranh giữa các chuỗi nhà hàng hải sản.\n\n5. **[CẦM 299k Ăn Buffet Hải Sản Thả Ga!](https://www.facebook.com/groups/2912891425404643/posts/28063953813205057)** - Nguồn: facebook.com\n   - Tóm tắt: Một bài viết quảng cáo về buffet hải sản với mức giá hấp dẫn.\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "Nhà hàng Hải Sản Xanh Hạ Long phốt",
+                "timeframe": "week",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "Nhà hàng Hải Sản Xanh Hạ Long phốt",
+                "timeframe": "week",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Nhà hàng Hải Sản Xanh Hạ Long phốt",
+                "topic": "general",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "Nhà Hàng Hồng Hạnh 6 Review",
+                    "url": "https://www.tiktok.com/discover/nh%C3%A0-h%C3%A0ng-h%E1%BB%93ng-h%E1%BA%A1nh-6-review",
+                    "source": "tiktok.com",
+                    "summary": "Hải sản tươi sống ngon nhất Hạ Long. Các món đặc sản từ hải sản. Các loại hải sản Hạ Long thì vẫn tươi sống. Cua, ghẹ, tôm bề bề Sam, cá mú",
+                    "score": 0.9987551
+                  },
+                  {
+                    "title": "Sashimi Cá Trích 1️⃣5️⃣8️⃣",
+                    "url": "https://www.instagram.com/reel/DY88Uo_TSVL",
+                    "source": "instagram.com",
+                    "summary": "Quán vừa mới tân trang lại cũng như là có sushi chay đầu tiên tại Vũng Tàu. Sashimi ở đây thì khỏi phải nói rồi, món ruột của tôi mà, rất là ngon và tươi nha.",
+                    "score": 0.009090384
+                  },
+                  {
+                    "title": "Fan Buffet Poseidon Lê Văn Lương? Điểm danh ngay!",
+                    "url": "https://www.tiktok.com/@buffet.poseidon/video/7644546933977042183",
+                    "source": "tiktok.com",
+                    "summary": "Gợi ý nội dung chia sẻ khi điểm danh - Món ăn ưa thích: hàu, tôm, cua, sashimi hay các món nướng/chiên. - Chất lượng hải sản: tươi, vừa miệng hay cần cải thiện.",
+                    "score": 0.008577485
+                  },
+                  {
+                    "title": "-22-1-Tôi che giấu thân phận người đứng đầu đế chế hải sản ...",
+                    "url": "https://www.facebook.com/61583824670102/videos/-22-1-t%C3%B4i-che-gi%E1%BA%A5u-th%C3%A2n-ph%E1%BA%ADn-ng%C6%B0%E1%BB%9Di-%C4%91%E1%BB%A9ng-%C4%91%E1%BA%A7u-%C4%91%E1%BA%BF-ch%E1%BA%BF-h%E1%BA%A3i-s%E1%BA%A3n/1699561191176127",
+                    "source": "facebook.com",
+                    "summary": "Chính là đối đầu với chuỗi nhà hàng Vịnh Kim Hải của tao. Chúng tôi không nói giúp ông ấy. Về sau các người đừng hòng nhận được bất kỳ đơn hàng nào từ tao.",
+                    "score": 0.0068771075
+                  },
+                  {
+                    "title": "CẦM 299k Ăn Buffet Hải Sản Thả Ga! Bạn nghe nói: \" ...",
+                    "url": "https://www.facebook.com/groups/2912891425404643/posts/28063953813205057",
+                    "source": "facebook.com",
+                    "summary": "CẦM 299k Ăn Buffet Hải Sản Thả Ga! Bạn nghe nói: \"Quảng cáo thôi!\" Nhưng đến và trải nghiệm... BUFFET LASVEGAS Size cua 3-5 lạng/con, nướng phô mai",
+                    "score": 0.0064882697
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Trong 7 ngày gần đây, không có thông tin cụ thể nào về phản ánh tiêu cực đối với Nhà hàng Hải Sản Xanh ở Hạ Long. Tuy nhiên, dưới đây là một số bài viết liên quan đến hải sản và nhà hàng trong khu vực:\n\n1. **[Nhà Hàng Hồng Hạnh 6 Review](https://www.tiktok.com/discover/nh%C3%A0-h%C3%A0ng-h%E1%BB%93ng-h%E1%BA%A1nh-6-review)** - Nguồn: tiktok.com\n   - Tóm tắt: Hải sản tươi sống ngon nhất Hạ Long với các món đặc sản từ hải sản như cua, ghẹ, tôm bề bề, và cá mú.\n\n2. **[Sashimi Cá Trích 1️⃣5️⃣8️⃣](https://www.instagram.com/reel/DY88Uo_TSVL)** - Nguồn: instagram.com\n   - Tóm tắt: Quán vừa mới tân trang lại và có sushi chay đầu tiên tại Vũng Tàu. Sashimi ở đây rất ngon và tươi.\n\n3. **[Fan Buffet Poseidon Lê Văn Lương? Điểm danh ngay!](https://www.tiktok.com/@buffet.poseidon/video/7644546933977042183)** - Nguồn: tiktok.com\n   - Tóm tắt: Gợi ý nội dung chia sẻ về chất lượng hải sản và các món ăn ưa thích.\n\n4. **[-22-1-Tôi che giấu thân phận người đứng đầu đế chế hải sản ...](https://www.facebook.com/61583824670102/videos/-22-1-t%C3%B4i-che-gi%E1%BA%A5u-th%C3%A2n-ph%E1%BA%ADn-ng%C6%B0%E1%BB%9Di-%C4%91%E1%BB%A9ng-%C4%91%E1%BA%A7u-%C4%91%E1%BA%BF-ch%E1%BA%BF-h%E1%BA%A3i-s%E1%BA%A3n/1699561191176127)** - Nguồn: facebook.com\n   - Tóm tắt: Một video liên quan đến sự cạnh tranh giữa các chuỗi nhà hàng hải sản.\n\n5. **[CẦM 299k Ăn Buffet Hải Sản Thả Ga!](https://www.facebook.com/groups/2912891425404643/posts/28063953813205057)** - Nguồn: facebook.com\n   - Tóm tắt: Một bài viết quảng cáo về buffet hải sản với mức giá hấp dẫn.\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "Nhà hàng Hải Sản Xanh Hạ Long phốt",
+            "timeframe": "week",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Nhà hàng Hải Sản Xanh Hạ Long phốt",
+            "topic": "general",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "Nhà Hàng Hồng Hạnh 6 Review",
+                "url": "https://www.tiktok.com/discover/nh%C3%A0-h%C3%A0ng-h%E1%BB%93ng-h%E1%BA%A1nh-6-review",
+                "source": "tiktok.com",
+                "summary": "Hải sản tươi sống ngon nhất Hạ Long. Các món đặc sản từ hải sản. Các loại hải sản Hạ Long thì vẫn tươi sống. Cua, ghẹ, tôm bề bề Sam, cá mú",
+                "score": 0.9987551
+              },
+              {
+                "title": "Sashimi Cá Trích 1️⃣5️⃣8️⃣",
+                "url": "https://www.instagram.com/reel/DY88Uo_TSVL",
+                "source": "instagram.com",
+                "summary": "Quán vừa mới tân trang lại cũng như là có sushi chay đầu tiên tại Vũng Tàu. Sashimi ở đây thì khỏi phải nói rồi, món ruột của tôi mà, rất là ngon và tươi nha.",
+                "score": 0.009090384
+              },
+              {
+                "title": "Fan Buffet Poseidon Lê Văn Lương? Điểm danh ngay!",
+                "url": "https://www.tiktok.com/@buffet.poseidon/video/7644546933977042183",
+                "source": "tiktok.com",
+                "summary": "Gợi ý nội dung chia sẻ khi điểm danh - Món ăn ưa thích: hàu, tôm, cua, sashimi hay các món nướng/chiên. - Chất lượng hải sản: tươi, vừa miệng hay cần cải thiện.",
+                "score": 0.008577485
+              },
+              {
+                "title": "-22-1-Tôi che giấu thân phận người đứng đầu đế chế hải sản ...",
+                "url": "https://www.facebook.com/61583824670102/videos/-22-1-t%C3%B4i-che-gi%E1%BA%A5u-th%C3%A2n-ph%E1%BA%ADn-ng%C6%B0%E1%BB%9Di-%C4%91%E1%BB%A9ng-%C4%91%E1%BA%A7u-%C4%91%E1%BA%BF-ch%E1%BA%BF-h%E1%BA%A3i-s%E1%BA%A3n/1699561191176127",
+                "source": "facebook.com",
+                "summary": "Chính là đối đầu với chuỗi nhà hàng Vịnh Kim Hải của tao. Chúng tôi không nói giúp ông ấy. Về sau các người đừng hòng nhận được bất kỳ đơn hàng nào từ tao.",
+                "score": 0.0068771075
+              },
+              {
+                "title": "CẦM 299k Ăn Buffet Hải Sản Thả Ga! Bạn nghe nói: \" ...",
+                "url": "https://www.facebook.com/groups/2912891425404643/posts/28063953813205057",
+                "source": "facebook.com",
+                "summary": "CẦM 299k Ăn Buffet Hải Sản Thả Ga! Bạn nghe nói: \"Quảng cáo thôi!\" Nhưng đến và trải nghiệm... BUFFET LASVEGAS Size cua 3-5 lạng/con, nướng phô mai",
+                "score": 0.0064882697
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:15:00"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-06-02T17:16:27",
+      "user": "Khách phàn nàn phòng không sạch và lễ tân trả lời chậm. Gợi ý phản hồi lịch sự.",
+      "status": "answered",
+      "assistant_text": "Dưới đây là gợi ý phản hồi lịch sự cho khách hàng phàn nàn về phòng không sạch và sự chậm trễ trong phản hồi của lễ tân:\n\n---\n\nKính gửi Quý khách,\n\nCảm ơn Quý khách đã dành thời gian chia sẻ phản hồi về trải nghiệm của mình tại Nhà hàng Hải Sản Xanh. Chúng tôi rất tiếc khi biết rằng phòng của Quý khách không đạt tiêu chuẩn sạch sẽ và rằng sự phản hồi từ lễ tân không được nhanh chóng như mong đợi.\n\nChúng tôi xin lỗi vì những bất tiện mà Quý khách đã gặp phải. Đội ngũ của chúng tôi sẽ tiến hành kiểm tra và cải thiện quy trình vệ sinh phòng cũng như nâng cao chất lượng dịch vụ khách hàng để đảm bảo rằng những vấn đề này không xảy ra trong tương lai.\n\nChúng tôi rất trân trọng ý kiến của Quý khách và mong muốn được phục vụ Quý khách tốt hơn trong những lần tới. Nếu Quý khách có thể cung cấp thêm thông tin về thời gian lưu trú và số phòng, chúng tôi sẽ tiến hành kiểm tra và có những biện pháp khắc phục kịp thời.\n\nXin vui lòng liên hệ với chúng tôi qua kênh riêng để chúng tôi có thể hỗ trợ tốt nhất cho Quý khách.\n\nTrân trọng,\n[Đội ngũ Nhà hàng Hải Sản Xanh]\n\n---\n\nNếu bạn cần điều chỉnh hoặc thêm thông tin nào khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Dưới đây là gợi ý phản hồi lịch sự cho khách hàng phàn nàn về phòng không sạch và sự chậm trễ trong phản hồi của lễ tân:\n\n---\n\nKính gửi Quý khách,\n\nCảm ơn Quý khách đã dành thời gian chia sẻ phản hồi về trải nghiệm của mình tại Nhà hàng Hải Sản Xanh. Chúng tôi rất tiếc khi biết rằng phòng của Quý khách không đạt tiêu chuẩn sạch sẽ và rằng sự phản hồi từ lễ tân không được nhanh chóng như mong đợi.\n\nChúng tôi xin lỗi vì những bất tiện mà Quý khách đã gặp phải. Đội ngũ của chúng tôi sẽ tiến hành kiểm tra và cải thiện quy trình vệ sinh phòng cũng như nâng cao chất lượng dịch vụ khách hàng để đảm bảo rằng những vấn đề này không xảy ra trong tương lai.\n\nChúng tôi rất trân trọng ý kiến của Quý khách và mong muốn được phục vụ Quý khách tốt hơn trong những lần tới. Nếu Quý khách có thể cung cấp thêm thông tin về thời gian lưu trú và số phòng, chúng tôi sẽ tiến hành kiểm tra và có những biện pháp khắc phục kịp thời.\n\nXin vui lòng liên hệ với chúng tôi qua kênh riêng để chúng tôi có thể hỗ trợ tốt nhất cho Quý khách.\n\nTrân trọng,\n[Đội ngũ Nhà hàng Hải Sản Xanh]\n\n---\n\nNếu bạn cần điều chỉnh hoặc thêm thông tin nào khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-06-02T17:16:34"
+    },
+    {
+      "turn_index": 5,
+      "started_at": "2026-06-02T17:19:52",
+      "user": "Gợi ý cho tôi một khách sạn khu vực hai bà trưng",
+      "status": "answered",
+      "assistant_text": "Hiện tại, không có thông tin cụ thể nào về các khách sạn khu vực Hai Bà Trưng trong tháng qua. Tuy nhiên, bạn có thể tham khảo một số khách sạn phổ biến trong khu vực này:\n\n1. **Khách sạn Melia Hanoi** - Một trong những khách sạn sang trọng nhất tại Hà Nội, cung cấp dịch vụ cao cấp và vị trí thuận lợi.\n\n2. **Khách sạn Hanoi Pearl** - Nằm gần Hồ Hoàn Kiếm, khách sạn này nổi tiếng với dịch vụ tốt và không gian thoải mái.\n\n3. **Khách sạn Sofitel Legend Metropole Hanoi** - Khách sạn lịch sử với kiến trúc cổ điển, cung cấp trải nghiệm lưu trú đẳng cấp.\n\n4. **Khách sạn Lotte Hotel Hanoi** - Nằm trong tòa nhà cao nhất Hà Nội, khách sạn này có tầm nhìn đẹp và nhiều tiện nghi hiện đại.\n\nNếu bạn cần thêm thông tin chi tiết về một khách sạn cụ thể hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "khách sạn khu vực Hai Bà Trưng",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "khách sạn khu vực Hai Bà Trưng",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "khách sạn khu vực Hai Bà Trưng",
+                "topic": "general",
+                "timeframe": "month",
+                "items": []
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, không có thông tin cụ thể nào về các khách sạn khu vực Hai Bà Trưng trong tháng qua. Tuy nhiên, bạn có thể tham khảo một số khách sạn phổ biến trong khu vực này:\n\n1. **Khách sạn Melia Hanoi** - Một trong những khách sạn sang trọng nhất tại Hà Nội, cung cấp dịch vụ cao cấp và vị trí thuận lợi.\n\n2. **Khách sạn Hanoi Pearl** - Nằm gần Hồ Hoàn Kiếm, khách sạn này nổi tiếng với dịch vụ tốt và không gian thoải mái.\n\n3. **Khách sạn Sofitel Legend Metropole Hanoi** - Khách sạn lịch sử với kiến trúc cổ điển, cung cấp trải nghiệm lưu trú đẳng cấp.\n\n4. **Khách sạn Lotte Hotel Hanoi** - Nằm trong tòa nhà cao nhất Hà Nội, khách sạn này có tầm nhìn đẹp và nhiều tiện nghi hiện đại.\n\nNếu bạn cần thêm thông tin chi tiết về một khách sạn cụ thể hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "khách sạn khu vực Hai Bà Trưng",
+            "topic": "general",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "khách sạn khu vực Hai Bà Trưng",
+            "topic": "general",
+            "timeframe": "month",
+            "items": []
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:20:02"
+    },
+    {
+      "turn_index": 6,
+      "started_at": "2026-06-02T17:21:21",
+      "user": "tìm khách sạn ở khu vực chân cầu vĩnh tuy cho tôi",
+      "status": "answered",
+      "assistant_text": "Dưới đây là một số khách sạn và thông tin liên quan ở khu vực chân cầu Vĩnh Tuy:\n\n1. **[Khách sạn Golden Hotel Ngọc Khanh](https://www.facebook.com/groups/3519020721500899/posts/26694730710169906)** - Nguồn: facebook.com\n   - Địa chỉ: 11 Phố Trạm, Long Biên, Hà Nội. Vị trí gần chân cầu Vĩnh Tuy, Aeonmall Long Biên và các vị trí thuận lợi khác.\n\n2. **[Khách sạn Vĩnh Tuy - Quận Hai Bà Trưng Hà Nội](https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333)** - Nguồn: traveloka.com\n   - Một số khách sạn phổ biến ở Vĩnh Tuy bao gồm A25 Premium Hotel (8.5/10) và Bom Homes - Vinhomes Times City (7.4/10).\n\n3. **[Nhà Phố Trạm - Cách Chân Cầu Vĩnh Tuy 30M](https://www.facebook.com/groups/6379496075499667/posts/nha-pho-tram-cach-chan-cau-vinh-tuy-30m-gan-aeon-long-bien-dt-su-dung-40m2/27228080676881236)** - Nguồn: facebook.com\n   - Nhà phố gần chân cầu Vĩnh Tuy, gần Aeon Long Biên, với diện tích sử dụng 40m2.\n\nNếu bạn cần thêm thông tin chi tiết về một khách sạn cụ thể hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "khách sạn khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "khách sạn khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "khách sạn khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "Khách sạn Golden Hotel Ngọc Khanh - Facebook",
+                    "url": "https://www.facebook.com/groups/3519020721500899/posts/26694730710169906",
+                    "source": "facebook.com",
+                    "summary": "Khách sạn Golden Hotel Ngọc Khanh Địa chỉ 11 Phố Trạm, Long Biên, Hà Nội Vị trí gần chân cầu Vĩnh Tuy, Aeonmall Long Biên và các vị trí thuận lợi khác",
+                    "score": 0.8306082
+                  },
+                  {
+                    "title": "Khách hàng tìm vin trí kinh doanh đa dạng mọi thể loại từ Cafe, Nhà ...",
+                    "url": "https://www.facebook.com/groups/406329580657676/posts/khach-hang-tim-vin-tri-kinh-doanh-dang-moi-loai-tu-cafe-nha-hang-khach-san-spa/1709380113685943",
+                    "source": "facebook.com",
+                    "summary": "Đây luôn là khu vực có tính thanh khoản và tiềm năng tăng giá thuộc top đầu tại Long Biên. • Dự án Northern Star (Hòa Bình Green): Nằm ngay chân cầu Vĩnh Tuy",
+                    "score": 0.6972179
+                  },
+                  {
+                    "title": "Khách sạn Vĩnh Tuy-Quận Hai Bà Trưng Hà Nội, giảm tới 30%",
+                    "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333",
+                    "source": "traveloka.com",
+                    "summary": "Khách sạn phổ biến ở Vĩnh Tuy ; A25 Premium Hotel · 8.5/10 · (99 đánh giá) ; Bom Homes - Vinhomes Times City · 7.4/10 · (25 đánh giá) ; Full House Times City · 9.0/10.",
+                    "score": 0.6445166
+                  },
+                  {
+                    "title": "Em cần tìm homtay gần cầu vĩnh tuy 2 phòng ngủ ngay bg ai có ...",
+                    "url": "https://www.facebook.com/groups/adminluongthehoang/posts/1688068828981452",
+                    "source": "facebook.com",
+                    "summary": "HORIZON APARTMENT – Góc nhỏ ấm cúng giữa lòng Cầu Giấy Một nơi dừng chân nhẹ nhàng, riêng tư và tiện nghi – cho bạn cảm giác thoải mái như ở nhà.",
+                    "score": 0.61363083
+                  },
+                  {
+                    "title": "Nhà Phố Trạm-Cách Chân Cầu Vĩnh Tuy 30M - Facebook",
+                    "url": "https://www.facebook.com/groups/6379496075499667/posts/nha-pho-tram-cach-chan-cau-vinh-tuy-30m-gan-aeon-long-bien-dt-su-dung-40m2/27228080676881236",
+                    "source": "facebook.com",
+                    "summary": "Nhà Phố Trạm-Cách Chân Cầu Vĩnh Tuy 30M Gần Aeon Long Biên-DT Sử Dụng 40M2×5Tầng T1:Phòng Khách Bếp,WC T2,3,4:Phờng Ngủ Rộng Khép Kín",
+                    "score": 0.39194164
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là một số khách sạn và thông tin liên quan ở khu vực chân cầu Vĩnh Tuy:\n\n1. **[Khách sạn Golden Hotel Ngọc Khanh](https://www.facebook.com/groups/3519020721500899/posts/26694730710169906)** - Nguồn: facebook.com\n   - Địa chỉ: 11 Phố Trạm, Long Biên, Hà Nội. Vị trí gần chân cầu Vĩnh Tuy, Aeonmall Long Biên và các vị trí thuận lợi khác.\n\n2. **[Khách sạn Vĩnh Tuy - Quận Hai Bà Trưng Hà Nội](https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333)** - Nguồn: traveloka.com\n   - Một số khách sạn phổ biến ở Vĩnh Tuy bao gồm A25 Premium Hotel (8.5/10) và Bom Homes - Vinhomes Times City (7.4/10).\n\n3. **[Nhà Phố Trạm - Cách Chân Cầu Vĩnh Tuy 30M](https://www.facebook.com/groups/6379496075499667/posts/nha-pho-tram-cach-chan-cau-vinh-tuy-30m-gan-aeon-long-bien-dt-su-dung-40m2/27228080676881236)** - Nguồn: facebook.com\n   - Nhà phố gần chân cầu Vĩnh Tuy, gần Aeon Long Biên, với diện tích sử dụng 40m2.\n\nNếu bạn cần thêm thông tin chi tiết về một khách sạn cụ thể hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "khách sạn khu vực chân cầu Vĩnh Tuy",
+            "topic": "general",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "khách sạn khu vực chân cầu Vĩnh Tuy",
+            "topic": "general",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "Khách sạn Golden Hotel Ngọc Khanh - Facebook",
+                "url": "https://www.facebook.com/groups/3519020721500899/posts/26694730710169906",
+                "source": "facebook.com",
+                "summary": "Khách sạn Golden Hotel Ngọc Khanh Địa chỉ 11 Phố Trạm, Long Biên, Hà Nội Vị trí gần chân cầu Vĩnh Tuy, Aeonmall Long Biên và các vị trí thuận lợi khác",
+                "score": 0.8306082
+              },
+              {
+                "title": "Khách hàng tìm vin trí kinh doanh đa dạng mọi thể loại từ Cafe, Nhà ...",
+                "url": "https://www.facebook.com/groups/406329580657676/posts/khach-hang-tim-vin-tri-kinh-doanh-dang-moi-loai-tu-cafe-nha-hang-khach-san-spa/1709380113685943",
+                "source": "facebook.com",
+                "summary": "Đây luôn là khu vực có tính thanh khoản và tiềm năng tăng giá thuộc top đầu tại Long Biên. • Dự án Northern Star (Hòa Bình Green): Nằm ngay chân cầu Vĩnh Tuy",
+                "score": 0.6972179
+              },
+              {
+                "title": "Khách sạn Vĩnh Tuy-Quận Hai Bà Trưng Hà Nội, giảm tới 30%",
+                "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333",
+                "source": "traveloka.com",
+                "summary": "Khách sạn phổ biến ở Vĩnh Tuy ; A25 Premium Hotel · 8.5/10 · (99 đánh giá) ; Bom Homes - Vinhomes Times City · 7.4/10 · (25 đánh giá) ; Full House Times City · 9.0/10.",
+                "score": 0.6445166
+              },
+              {
+                "title": "Em cần tìm homtay gần cầu vĩnh tuy 2 phòng ngủ ngay bg ai có ...",
+                "url": "https://www.facebook.com/groups/adminluongthehoang/posts/1688068828981452",
+                "source": "facebook.com",
+                "summary": "HORIZON APARTMENT – Góc nhỏ ấm cúng giữa lòng Cầu Giấy Một nơi dừng chân nhẹ nhàng, riêng tư và tiện nghi – cho bạn cảm giác thoải mái như ở nhà.",
+                "score": 0.61363083
+              },
+              {
+                "title": "Nhà Phố Trạm-Cách Chân Cầu Vĩnh Tuy 30M - Facebook",
+                "url": "https://www.facebook.com/groups/6379496075499667/posts/nha-pho-tram-cach-chan-cau-vinh-tuy-30m-gan-aeon-long-bien-dt-su-dung-40m2/27228080676881236",
+                "source": "facebook.com",
+                "summary": "Nhà Phố Trạm-Cách Chân Cầu Vĩnh Tuy 30M Gần Aeon Long Biên-DT Sử Dụng 40M2×5Tầng T1:Phòng Khách Bếp,WC T2,3,4:Phờng Ngủ Rộng Khép Kín",
+                "score": 0.39194164
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:21:32"
+    },
+    {
+      "turn_index": 7,
+      "started_at": "2026-06-02T17:21:49",
+      "user": "xem cho tôi có phốt gì của các khách sạn trên không",
+      "status": "answered",
+      "assistant_text": "Dưới đây là thông tin về các phốt gần đây của các khách sạn mà bạn đã hỏi:\n\n1. **Khách sạn Golden Hotel Ngọc Khanh**: Không có thông tin cụ thể nào về phốt của khách sạn này trong tháng qua. Các kết quả tìm kiếm chủ yếu liên quan đến các chủ đề khác không liên quan đến khách sạn.\n\n2. **Khách sạn Vĩnh Tuy**: Tương tự, không có thông tin phốt nào cụ thể cho khách sạn Vĩnh Tuy. Các bài viết tìm thấy chủ yếu liên quan đến các vấn đề khác trong ngành khách sạn.\n\n3. **A25 Premium Hotel**: Không có thông tin phốt nào được tìm thấy cho khách sạn này trong tháng qua. Các kết quả tìm kiếm chủ yếu liên quan đến các sản phẩm công nghệ và không liên quan đến khách sạn.\n\n4. **Bom Homes - Vinhomes Times City**: Không có thông tin phốt nào cụ thể cho Bom Homes. Các bài viết tìm thấy chủ yếu liên quan đến các sự kiện khác không liên quan đến khách sạn.\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "Khách sạn Golden Hotel Ngọc Khanh phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "web_search",
+              "args": {
+                "query": "Khách sạn Vĩnh Tuy phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "web_search",
+              "args": {
+                "query": "A25 Premium Hotel phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            },
+            {
+              "name": "web_search",
+              "args": {
+                "query": "Bom Homes - Vinhomes Times City phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "Khách sạn Golden Hotel Ngọc Khanh phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Khách sạn Golden Hotel Ngọc Khanh phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "The Rockies Best Small Towns For A Weekend Escape - WorldAtlas",
+                    "url": "https://www.worldatlas.com/cities/the-rockies-best-small-towns-for-a-weekend-escape-54553.html",
+                    "source": "worldatlas.com",
+                    "summary": "A Friday-to-Monday in the Rockies takes a different shape in each of these ten towns. Banff sits inside Canada's oldest national park with the Fairmont Banff Springs hotel running above the river since 1888. Jasper, recovering from the July 2024 wildfire that took 358 of its 1,113 structures, still has Athabasca Falls, Miette Hot Springs, and the surviving Jasper Park Lodge. Estes Park anchors the eastern entrance to Rocky Mountain National Park with the Stanley Hotel above town. Crested Butte and Telluride hold the Victorian mining-town streetscapes most of Colorado has lost. Jasper sits inside Jasper National Park, the largest national park in the Canadian Rockies. Golden sits in the Columbia Valley at the confluence of the Columbia and Kicking Horse rivers, with the Canadian Rockies on one side and the Columbia Mountains on the other. Crested Butte is the rare Colorado mountain town that has kept its 19th-century mining-era street grid and most of the Victorian wooden facades intact.",
+                    "score": 0.07038701
+                  },
+                  {
+                    "title": "Billionaire Tilman Fertitta buying Las Vegas Strip icon Caesars Entertainment in $18B deal - New York Post",
+                    "url": "https://nypost.com/2026/05/28/business/tilman-fertitta-buying-caesars-entertainment-in-18b-deal/",
+                    "source": "nypost.com",
+                    "summary": "Hospitality billionaire Tilman Fertitta’s firm will buy Caesars Entertainment in a $17.6 billion deal, the companies said Thursday, expanding his leisure empire. The deal, which will take one of the Las Vegas Strip’s most prized casino operators private, includes about $11.9 billion in assumed debt, the companies said. Fertitta, the US ambassador to Italy and San Marino and owner of Fertitta Entertainment, offered $31 per share — a nearly 50% premium to the stock’s closing price before the deal was first reported and about 8% to its last close on Wednesday. Meanwhile, Fertitta Entertainment owns the Golden Nugget Hotel and Casinos, the NBA’s Houston Rockets and — through its restaurant and hospitality arm — more than 600 properties across 15 countries. Tilman Fertitta's empire includes, the Golden Nugget Hotel and Casinos, the NBA's Houston Rockets and — through its restaurant and hospitality arm — more than 600 properties across 15 countries. The deal, which will take one of the Las Vegas Strip's most prized casino operators private, includes about $11.9 billion in assumed debt AP Photo/John Locher.",
+                    "score": 0.047678076
+                  },
+                  {
+                    "title": "A New Asia Next World-class Destination Takes Shape In North Movement - The National Law Review",
+                    "url": "https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement",
+                    "source": "natlawreview.com",
+                    "summary": "NHA TRANG, VIETNAM, May 27, 2026 /EINPresswire.com/ -- North Nha Trang is experiencing a distinct geographical evolution, shifting the region’s social and tourism energy toward an open, integrated model of coastal living. Rather than measuring its success through rigid statistics, the destination's appeal is best felt through its vibrant, undeniable pulse - a thriving popularity that has naturally earned it recognition from international media as an emerging cultural and lifestyle hub in Southeast Asia. The enclave’s identity is anchored by its human energy and a continuous coastal rhythm that moves seamlessly from day to night. Rather than functioning as a standalone real estate product, the oceanfront tower serves as a fluid gateway for individuals seeking to weave their daily lives into the area's established lifestyle, offering immediate access to the neighborhood's active social networks and cultural calendar. Envisioned as an integrated destination ecosystem, the coastal enclave continues to expand its cultural and social framework to support the region's evolution.",
+                    "score": 0.046573047
+                  },
+                  {
+                    "title": "Trump’s Jaw-Dropping $130 Million Plot Slapped With Lawsuit - The Daily Beast",
+                    "url": "https://www.thedailybeast.com/donald-trumps-jaw-dropping-130-million-presidential-library-plot-slapped-with-lawsuit/",
+                    "source": "thedailybeast.com",
+                    "summary": "Donald Trump has been hit with a new lawsuit alleging that he was illegally given a piece of prime Miami real estate to build his presidential “library,” a skyscraper hotel that will feature two golden statues and a ballroom, but no books or collections. The state of Florida last year “sold” a 2.6-acre waterfront property worth between $67 million and $300 million to Trump’s presidential library foundation in exchange for just $10. Although the project is slated to be managed by the nonprofit foundation, Trump told reporters in April that he “doesn’t believe in building libraries or museums.” Instead, he plans to build a “hotel with a beautiful building underneath and a 747 Air Force One in the lobby.”. Now, a group of Miami residents have brought a suit seeking to void the transaction on the grounds that the land was illegally given to Trump in violation of the U.S. Constitution, which prevents presidents from receiving financial benefits while in office.",
+                    "score": 0.045087047
+                  },
+                  {
+                    "title": "HVS Asia Pacific Hotel Transactions Bulletin Week Ending 22 May 2026 - Hotel News Resource",
+                    "url": "https://www.hotelnewsresource.com/article141408.html",
+                    "source": "hotelnewsresource.com",
+                    "summary": "**In Brief:** The latest bulletin from HVS highlights the most recent transactions within the Asia Pacific hotel industry, providing a comprehensive overview of changes in property ownership and management for the week ending 22 May 2026. **Goldman Sachs Acquires Seonyudo Union Hotel for KRW53 Billion in Seoul, South Korea**. US-based Goldman Sachs has acquired 96-key Seonyudo Union Hotel in Seoul for approximately KRW53 billion, translating to approximately KRW564 million per key. Located in Yeongdeungpo district near Seonyudo Park and the Han River, the property forms part of the broader Union Place mixed-use development and benefits from strong connectivity across western Seoul. The transaction marks Goldman Sachs’ second hotel acquisition in Seoul, following its acquisition of the 270-key Mercure Ambassador Seoul Hongdae for KRW262 billion in 2025. Australia-based experiential tourism group Journey Beyond has acquired the 110-key Mercure Kakadu Crocodile Hotel in Kakadu National Park, Northern Territory, for an undisclosed amount.",
+                    "score": 0.044485457
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "Khách sạn Vĩnh Tuy phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Khách sạn Vĩnh Tuy phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "PPHE Hotel Shares Leap on $1.24 Billion Fattal Hotel Takeover Approach - WSJ",
+                    "url": "https://www.wsj.com/business/deals/pphe-hotel-shares-leap-on-1-24-billion-fattal-hotel-takeover-approach-6d20f8f7",
+                    "source": "wsj.com",
+                    "summary": "# PPHE Hotel Group Stock Prices Jump After $1.24 Billion Fattal Takeover Bid - WSJ. S&P 500 Futures 7528.50 -0.15%. https://www.wsj.com/business/deals/pphe-hotel-shares-leap-on-1-24-billion-fattal-hotel-takeover-approach-6d20f8f7. # PPHE Hotel Shares Leap on $1.24 Billion Fattal Hotel Takeover Approach. ## PPHE said on Nov. 21 that it was undertaking a review of the business to improve shareholder value. PPHE Hotels—which houses the Park Plaza brand and has partnerships with the Radisson Hotel Group—said it plans to engage with its shareholders over the proposal.Company Supplied Image. PPHE Hotel shares hit a three-month high after the company said it received a 920.9 million-pound ($1.24 billion) takeover proposal from shareholder Fattal Hotel Group that it believes represents fair value. Image 6: Trump and Democrats Get Paxton in Texas, the Senate Nominee They All Wanted. Image 7: Ford’s Stock Is Surging—and It’s Got Nothing to Do With Its Car Business. #### Ford’s Stock Is Surging—and It’s Got Nothing to Do With Its Car Business. Image 10: Iran’s ‘Skirmish’ Strategy in the Strait.",
+                    "score": 0.075373694
+                  },
+                  {
+                    "title": "Hotel that refused to serve a guest tap water didn’t break the law: court rules - New York Post",
+                    "url": "https://nypost.com/2026/05/30/world-news/hotel-that-refused-to-serve-a-guest-tap-water-didnt-break-the-law/",
+                    "source": "nypost.com",
+                    "summary": "# Hotel that refused to serve a guest tap water didn’t break the law: court rules. A five-star hotel in Italy that refused to serve a guest tap water did not break the law, the country’s highest court ruled. The case against the hotel — located in Badia, a municipality in the Northern Italian province of South Tyrol — was brought to the Italian Supreme Court after it was rejected by a Roman court as well as an appeals court, as per CNN. The woman argued that “water is a natural good and a universal human right of every individual, and that the free supply of a minimum vital quantity necessary to satisfy essential needs must be guaranteed, even in the event of arrears,” according to the court documents. However, the court ruled in favor of the hotel, citing that Italian law does not mandate that restaurateurs or hotel owners serve tap water.",
+                    "score": 0.07000458
+                  },
+                  {
+                    "title": "VSIP joint venture gets green light for five new industrial parks - Vietnam Investment Review - VIR",
+                    "url": "https://vir.com.vn/vsip-joint-venture-gets-green-light-for-five-new-industrial-parks-153814.html",
+                    "source": "vir.com.vn",
+                    "summary": "## Investing in Haiphong. The Vietnam Singapore Industrial Park joint venture has been granted investment registration certificates for five additional industrial parks across Vietnam. Under the newly approved investment plan, the VSIP joint venture will develop five new industrial parks in Haiphong, Nghe An, Hue, Ha Nam and Ho Chi Minh City. At the Vietnam-Singapore Tech Connect Forum, held in Singapore as part of the working visit by a high-ranking Vietnamese delegation led by Party General Secretary and State President To Lam, VSIP introduced the VSIP 2.0 model, signalling a strategic shift towards higher-value, innovation-driven ecosystems. Corporate CEO Talk Biz Link PR Newswire Media OutReach Newswire. Investing M&A Outbound Investment Investing in Haiphong. Your Consultant KPMG PwC Indochine Counsel Vilasia. Green Growth Energy Efficiency Rethinking Plastics BASF. Money Insurance Smart Payment Trends Stock Monitor. Timeout Travel Hotels & Restaurants The Insider Entertainment Lifestyle.",
+                    "score": 0.054787528
+                  },
+                  {
+                    "title": "Hotel’s refusal to serve guest tap water at restaurant is lawful, top Italian court rules - CNN",
+                    "url": "https://www.cnn.com/2026/05/27/travel/italy-tap-water-hotel-ruling-scli-intl",
+                    "source": "cnn.com",
+                    "summary": "# Hotel’s refusal to serve guest tap water at restaurant is lawful, top Italian court rules. * A guest at a five-star Italian hotel sued after staff repeatedly refused to serve her tap water. * The case highlights cultural differences in tap water service between the United States and mainland Europe. A five-star hotel in Italy that repeatedly refused to serve a guest tap water at its restaurant did not break any laws, the country’s top court has ruled. The woman filed a lawsuit after hotel staff said they would only serve her bottled water during a stay at the end of 2019, according to a court ruling seen by CNN. However, the Supreme Court disagreed, ruling that the decision not to serve tap water was lawful. However, her lawsuit has now been rejected at the highest level of the Italian justice system, with the Supreme Court ruling that the country’s laws do not require restaurateurs or hotel owners to serve tap water.",
+                    "score": 0.04574752
+                  },
+                  {
+                    "title": "Hotel Villa Michelangelo Vicenza – Starhotels Collezione Unveils Newly Redesigned Rooms and Suites - Hospitality Net",
+                    "url": "https://www.hospitalitynet.org/announcement/41014534/hotel-villa-michelangelo-vicenza-starhotels-collezione-unveils-newly-redesigned-rooms-and-suites",
+                    "source": "hospitalitynet.org",
+                    "summary": "# Hotel Villa Michelangelo Vicenza - Starhotels Collezione. ## Hotel Villa Michelangelo Vicenza – Starhotels Collezione Unveils Newly Redesigned Rooms and Suites. Nestled on the slopes of the Berici hills, **Hotel Villa Michelangelo Vicenza – Starhotels Collezione** has long been a peaceful retreat for travelers seeking authentic hospitality just minutes from the historic center of Vicenza. Today, following an ambitious **renovation of all rooms and suites,** the property introduces a refreshed visual identity rooted in the value of Italian craftsmanship and a concept of luxury defined by subtle yet unforgettable details. In line with Starhotels’ philosophy, the renovation places strong emphasis on local craftsmanship, bringing together artisans from Vicenza with trusted Piedmont-based makers as part of the Group’s contemporary patronage project ***La Grande Bellezza – The Dream Factory.*** Tappezzeria Bruscato, located just a short distance from the hotel, handled the production and installation of curtains and headboards, while Vicenza-based artist Giorgio Bertoldo created the wall decorations.",
+                    "score": 0.036621105
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "A25 Premium Hotel phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "A25 Premium Hotel phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - bgr.com",
+                    "url": "https://www.bgr.com/2174135/cheap-samsung-phone-consumer-reports-recommends-buying/",
+                    "source": "bgr.com",
+                    "summary": "The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                    "score": 0.07652507
+                  },
+                  {
+                    "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - AOL.com",
+                    "url": "https://www.aol.com/entertainment/300-samsung-phone-consumer-reports-204700467.html",
+                    "source": "aol.com",
+                    "summary": "# The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                    "score": 0.07131274
+                  },
+                  {
+                    "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - AOL.com",
+                    "url": "https://www.aol.com/articles/300-samsung-phone-consumer-reports-204700000.html",
+                    "source": "aol.com",
+                    "summary": "# The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                    "score": 0.07115768
+                  },
+                  {
+                    "title": "Week of May 18 Cable News Ratings: Holiday Weekend Brings a Mixed Bag - ADWEEK",
+                    "url": "https://www.adweek.com/tvnewser/week-of-may-18-2026-cable-news-ratings/",
+                    "source": "adweek.com",
+                    "summary": "## Fox News was the only network with gains during primetime and total day. This is TVNewser’s basic cable network ranker and cable news report for the week of May 18, 2026. According to Nielsen big data + panel for the week of May 18, Fox News averaged 2.260 million total viewers and 207,000 A25-54 viewers during primetime. The network was down -1% in total viewers but grew by +2% in the demo compared to the week prior (the week beginning May 11). During total day, it finished first in total viewers and was No. 2 in the total day demo. It was down -1% in total viewers and -10% in the demo compared to the network’s average the week prior. CNN averaged 598,000 total primetime viewers and 108,000 A25-54 viewers during primetime for the week of May 18. * During primetime, Fox News was down by -7% in total viewers and -18% in the A25-54 demo.",
+                    "score": 0.048699286
+                  },
+                  {
+                    "title": "Here Are the Cable News Ratings for April 2026 - ADWEEK",
+                    "url": "https://www.adweek.com/tvnewser/here-are-the-cable-news-ratings-for-april-2026/",
+                    "source": "adweek.com",
+                    "summary": "The newsy month resulted in CNN and MS NOW registering growth in total viewers and the Adults 25-54 demo, respectively, during primetime. According to Nielsen big data + panel, Fox News in April had 2.861 million total viewers in primetime and 284,000 viewers in the Adults 25-54 demo. During total day, it had 1.752 million total viewers and 172,000 viewers in the demo. Compared to its March 2026 performance, Fox News was down by -4% in total viewers and -12% in the A25-54 demo during primetime viewing hours. The network finished April in first place among total viewers and was No. 4 in the demo during primetime. MS NOW finished in second place in total viewers in primetime and total day, with 1.256 million and 747,000 viewers, respectively, in April. The network in the A25-54 demo had 135,000 viewers in primetime and 80,000 viewers during total day. During total day, it was down by -1% in total viewers and was flat in the demo.",
+                    "score": 0.04048388
+                  }
+                ]
+              }
+            },
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "Bom Homes - Vinhomes Times City phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Bom Homes - Vinhomes Times City phốt",
+                "topic": "news",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "12 Hartford residents displaced following Edgewood Street multi-family house fire, officials say - Greenwich Time",
+                    "url": "https://www.greenwichtime.com/news/article/hartford-edgewood-st-12-residents-displaced-fire-22238850.php",
+                    "source": "greenwichtime.com",
+                    "summary": "HARTFORD — Seven adults and five children living in the city were displaced in an overnight fire that broke out at a multi-family residence, officials said. The Hartford Fire Department said crews responded to the fire at the three-story home in the 400 block of Edgewood Street around 1:06 a.m. Sunday. Crews found the fire on the residence's second floor, and it began extending to the third floor, the department said. 'Turning the home into a bomb': Police say CT burglar tried to cause explosion. Jessica loves all things Connecticut. 'Turning the home into a bomb': Police say CT burglar tried to cause explosion. Find the Best Near You. The best home remodelers in CT. Choose from the best home remodelers in CT and find a team that matches your style, not just your square footage. CT’s best garden centers to visit this winter. CT retirement communities are lovely places to call home. Treat yourself to a day of luxury at the best spas in CT.",
+                    "score": 0.020695398
+                  },
+                  {
+                    "title": "New York passes pied-à-terre tax for luxury NYC second homes - 6sqft",
+                    "url": "https://www.6sqft.com/new-york-passes-pied-a-terre-tax-for-luxury-nyc-second-homes/",
+                    "source": "6sqft.com",
+                    "summary": "New York passes pied-à-terre tax for luxury NYC second homes. State lawmakers on Wednesday approved the $268.5 billion 2027 state budget, which included a new annual surcharge on second homes in the city valued at $5 million or more. First announced last month by Gov. Kathy Hochul, the new tax will take effect July 1 and could potentially generate $500 million in revenue for the city each year. For the first two years, starting July 1, co-ops and condos valued at $1 million or above by the city’s Department of Finance will face the tax. The city valued the home at $15.5 million for the 2026-2027 tax year. Under the new tax, as first reported by the New York Times, properties worth between $1 million and $3 million will see a 4 percent annual tax. Properties between $3 million and $5 million will face a 5.25 percent tax.",
+                    "score": 0.020225683
+                  },
+                  {
+                    "title": "World War II mortar round found in Enfield home, police setting up perimeter, officials say - Greenwich Time",
+                    "url": "https://www.greenwichtime.com/journalinquirer/article/enfield-police-lake-dr-world-war-ii-mortar-shell-22286720.php",
+                    "source": "greenwichtime.com",
+                    "summary": "# World War II mortar round found in Enfield home, police setting up perimeter, officials say. ENFIELD — Police are setting up a perimeter around a Lake Drive home after officers discovered a World War II-era mortar round inside the building on Monday, officials say. In a post on Facebook at 4:53 p.m., the Enfield Police Department said the house has been vacated and a perimeter established around the home. Police said department personnel anticipate applying for a search warrant for this location and then utilizing bomb squad personnel to render the mortar round and the building safe. While the man was initially unwilling to speak with officers, police said, he eventually agreed to allow them a limited entry into his home solely for the purpose of taking possession of firearms inside the home while this investigation continued. That is when officers found what appeared to be at least one WWII-era mortar round inside the home. Find the Best Near You. The best home remodelers in CT.",
+                    "score": 0.02008682
+                  },
+                  {
+                    "title": "N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’ - The New York Times",
+                    "url": "https://www.nytimes.com/2026/05/14/nyregion/nyc-second-home-tax-rates.html",
+                    "source": "nytimes.com",
+                    "summary": "# N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’ - The New York Times. New York|N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’. # N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’. A proposed tax on high-end second homes in New York City is aimed at raising $500 million a year to help address the city’s budget deficit.Credit...Karsten Moran for The New York Times. A new tax surcharge on the second homes of wealthy part-time residents of New York City would initially target properties that have a “market value” of at least $1 million, according to a plan that Gov. Kathy Hochul proposed to state legislative leaders on Thursday. The governor’s office claims that a $1 million “market value” is the equivalent to a sales value of about $5 million. According to the governor’s office, a second-home condominium with a sales value of $18.5 million might have a “market value” of $1.1 million.",
+                    "score": 0.01981188
+                  },
+                  {
+                    "title": "How Mamdani and Hochul Are Solving New York City’s Budget Crisis - The New York Times",
+                    "url": "https://www.nytimes.com/2026/05/12/nyregion/mamdani-budget-nyc.html",
+                    "source": "nytimes.com",
+                    "summary": "# How Mamdani and Hochul Are Solving New York City’s Budget Crisis - The New York Times. # How Mamdani and Hochul Are Solving New York City’s Budget Crisis. A generous influx of state resources from Gov. Kathy Hochul and a new tax on luxury second homes will help Mayor Zohran Mamdani balance a $125 billion budget. In his executive budget, Mayor Zohran Mamdani dropped his threat to raise property taxes in New York City.Credit...Victor J. Blue for The New York Times. Sally Goldenberg is a Times reporter covering New York City politics and government. Dana Rubinstein covers New York City politics and government for The Times. Benjamin Oreskes is a reporter covering New York State politics and government for The Times. A version of this article appears in print on May 13, 2026, Section A, Page 20 of the New York edition with the headline: How the State Is Helping New York City Solve Its Budgetary Crisis.",
+                    "score": 0.019540632
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là thông tin về các phốt gần đây của các khách sạn mà bạn đã hỏi:\n\n1. **Khách sạn Golden Hotel Ngọc Khanh**: Không có thông tin cụ thể nào về phốt của khách sạn này trong tháng qua. Các kết quả tìm kiếm chủ yếu liên quan đến các chủ đề khác không liên quan đến khách sạn.\n\n2. **Khách sạn Vĩnh Tuy**: Tương tự, không có thông tin phốt nào cụ thể cho khách sạn Vĩnh Tuy. Các bài viết tìm thấy chủ yếu liên quan đến các vấn đề khác trong ngành khách sạn.\n\n3. **A25 Premium Hotel**: Không có thông tin phốt nào được tìm thấy cho khách sạn này trong tháng qua. Các kết quả tìm kiếm chủ yếu liên quan đến các sản phẩm công nghệ và không liên quan đến khách sạn.\n\n4. **Bom Homes - Vinhomes Times City**: Không có thông tin phốt nào cụ thể cho Bom Homes. Các bài viết tìm thấy chủ yếu liên quan đến các sự kiện khác không liên quan đến khách sạn.\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "Khách sạn Golden Hotel Ngọc Khanh phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Khách sạn Golden Hotel Ngọc Khanh phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "The Rockies Best Small Towns For A Weekend Escape - WorldAtlas",
+                "url": "https://www.worldatlas.com/cities/the-rockies-best-small-towns-for-a-weekend-escape-54553.html",
+                "source": "worldatlas.com",
+                "summary": "A Friday-to-Monday in the Rockies takes a different shape in each of these ten towns. Banff sits inside Canada's oldest national park with the Fairmont Banff Springs hotel running above the river since 1888. Jasper, recovering from the July 2024 wildfire that took 358 of its 1,113 structures, still has Athabasca Falls, Miette Hot Springs, and the surviving Jasper Park Lodge. Estes Park anchors the eastern entrance to Rocky Mountain National Park with the Stanley Hotel above town. Crested Butte and Telluride hold the Victorian mining-town streetscapes most of Colorado has lost. Jasper sits inside Jasper National Park, the largest national park in the Canadian Rockies. Golden sits in the Columbia Valley at the confluence of the Columbia and Kicking Horse rivers, with the Canadian Rockies on one side and the Columbia Mountains on the other. Crested Butte is the rare Colorado mountain town that has kept its 19th-century mining-era street grid and most of the Victorian wooden facades intact.",
+                "score": 0.07038701
+              },
+              {
+                "title": "Billionaire Tilman Fertitta buying Las Vegas Strip icon Caesars Entertainment in $18B deal - New York Post",
+                "url": "https://nypost.com/2026/05/28/business/tilman-fertitta-buying-caesars-entertainment-in-18b-deal/",
+                "source": "nypost.com",
+                "summary": "Hospitality billionaire Tilman Fertitta’s firm will buy Caesars Entertainment in a $17.6 billion deal, the companies said Thursday, expanding his leisure empire. The deal, which will take one of the Las Vegas Strip’s most prized casino operators private, includes about $11.9 billion in assumed debt, the companies said. Fertitta, the US ambassador to Italy and San Marino and owner of Fertitta Entertainment, offered $31 per share — a nearly 50% premium to the stock’s closing price before the deal was first reported and about 8% to its last close on Wednesday. Meanwhile, Fertitta Entertainment owns the Golden Nugget Hotel and Casinos, the NBA’s Houston Rockets and — through its restaurant and hospitality arm — more than 600 properties across 15 countries. Tilman Fertitta's empire includes, the Golden Nugget Hotel and Casinos, the NBA's Houston Rockets and — through its restaurant and hospitality arm — more than 600 properties across 15 countries. The deal, which will take one of the Las Vegas Strip's most prized casino operators private, includes about $11.9 billion in assumed debt AP Photo/John Locher.",
+                "score": 0.047678076
+              },
+              {
+                "title": "A New Asia Next World-class Destination Takes Shape In North Movement - The National Law Review",
+                "url": "https://natlawreview.com/press-releases/new-asia-next-world-class-destination-takes-shape-north-movement",
+                "source": "natlawreview.com",
+                "summary": "NHA TRANG, VIETNAM, May 27, 2026 /EINPresswire.com/ -- North Nha Trang is experiencing a distinct geographical evolution, shifting the region’s social and tourism energy toward an open, integrated model of coastal living. Rather than measuring its success through rigid statistics, the destination's appeal is best felt through its vibrant, undeniable pulse - a thriving popularity that has naturally earned it recognition from international media as an emerging cultural and lifestyle hub in Southeast Asia. The enclave’s identity is anchored by its human energy and a continuous coastal rhythm that moves seamlessly from day to night. Rather than functioning as a standalone real estate product, the oceanfront tower serves as a fluid gateway for individuals seeking to weave their daily lives into the area's established lifestyle, offering immediate access to the neighborhood's active social networks and cultural calendar. Envisioned as an integrated destination ecosystem, the coastal enclave continues to expand its cultural and social framework to support the region's evolution.",
+                "score": 0.046573047
+              },
+              {
+                "title": "Trump’s Jaw-Dropping $130 Million Plot Slapped With Lawsuit - The Daily Beast",
+                "url": "https://www.thedailybeast.com/donald-trumps-jaw-dropping-130-million-presidential-library-plot-slapped-with-lawsuit/",
+                "source": "thedailybeast.com",
+                "summary": "Donald Trump has been hit with a new lawsuit alleging that he was illegally given a piece of prime Miami real estate to build his presidential “library,” a skyscraper hotel that will feature two golden statues and a ballroom, but no books or collections. The state of Florida last year “sold” a 2.6-acre waterfront property worth between $67 million and $300 million to Trump’s presidential library foundation in exchange for just $10. Although the project is slated to be managed by the nonprofit foundation, Trump told reporters in April that he “doesn’t believe in building libraries or museums.” Instead, he plans to build a “hotel with a beautiful building underneath and a 747 Air Force One in the lobby.”. Now, a group of Miami residents have brought a suit seeking to void the transaction on the grounds that the land was illegally given to Trump in violation of the U.S. Constitution, which prevents presidents from receiving financial benefits while in office.",
+                "score": 0.045087047
+              },
+              {
+                "title": "HVS Asia Pacific Hotel Transactions Bulletin Week Ending 22 May 2026 - Hotel News Resource",
+                "url": "https://www.hotelnewsresource.com/article141408.html",
+                "source": "hotelnewsresource.com",
+                "summary": "**In Brief:** The latest bulletin from HVS highlights the most recent transactions within the Asia Pacific hotel industry, providing a comprehensive overview of changes in property ownership and management for the week ending 22 May 2026. **Goldman Sachs Acquires Seonyudo Union Hotel for KRW53 Billion in Seoul, South Korea**. US-based Goldman Sachs has acquired 96-key Seonyudo Union Hotel in Seoul for approximately KRW53 billion, translating to approximately KRW564 million per key. Located in Yeongdeungpo district near Seonyudo Park and the Han River, the property forms part of the broader Union Place mixed-use development and benefits from strong connectivity across western Seoul. The transaction marks Goldman Sachs’ second hotel acquisition in Seoul, following its acquisition of the 270-key Mercure Ambassador Seoul Hongdae for KRW262 billion in 2025. Australia-based experiential tourism group Journey Beyond has acquired the 110-key Mercure Kakadu Crocodile Hotel in Kakadu National Park, Northern Territory, for an undisclosed amount.",
+                "score": 0.044485457
+              }
+            ]
+          }
+        },
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "Khách sạn Vĩnh Tuy phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Khách sạn Vĩnh Tuy phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "PPHE Hotel Shares Leap on $1.24 Billion Fattal Hotel Takeover Approach - WSJ",
+                "url": "https://www.wsj.com/business/deals/pphe-hotel-shares-leap-on-1-24-billion-fattal-hotel-takeover-approach-6d20f8f7",
+                "source": "wsj.com",
+                "summary": "# PPHE Hotel Group Stock Prices Jump After $1.24 Billion Fattal Takeover Bid - WSJ. S&P 500 Futures 7528.50 -0.15%. https://www.wsj.com/business/deals/pphe-hotel-shares-leap-on-1-24-billion-fattal-hotel-takeover-approach-6d20f8f7. # PPHE Hotel Shares Leap on $1.24 Billion Fattal Hotel Takeover Approach. ## PPHE said on Nov. 21 that it was undertaking a review of the business to improve shareholder value. PPHE Hotels—which houses the Park Plaza brand and has partnerships with the Radisson Hotel Group—said it plans to engage with its shareholders over the proposal.Company Supplied Image. PPHE Hotel shares hit a three-month high after the company said it received a 920.9 million-pound ($1.24 billion) takeover proposal from shareholder Fattal Hotel Group that it believes represents fair value. Image 6: Trump and Democrats Get Paxton in Texas, the Senate Nominee They All Wanted. Image 7: Ford’s Stock Is Surging—and It’s Got Nothing to Do With Its Car Business. #### Ford’s Stock Is Surging—and It’s Got Nothing to Do With Its Car Business. Image 10: Iran’s ‘Skirmish’ Strategy in the Strait.",
+                "score": 0.075373694
+              },
+              {
+                "title": "Hotel that refused to serve a guest tap water didn’t break the law: court rules - New York Post",
+                "url": "https://nypost.com/2026/05/30/world-news/hotel-that-refused-to-serve-a-guest-tap-water-didnt-break-the-law/",
+                "source": "nypost.com",
+                "summary": "# Hotel that refused to serve a guest tap water didn’t break the law: court rules. A five-star hotel in Italy that refused to serve a guest tap water did not break the law, the country’s highest court ruled. The case against the hotel — located in Badia, a municipality in the Northern Italian province of South Tyrol — was brought to the Italian Supreme Court after it was rejected by a Roman court as well as an appeals court, as per CNN. The woman argued that “water is a natural good and a universal human right of every individual, and that the free supply of a minimum vital quantity necessary to satisfy essential needs must be guaranteed, even in the event of arrears,” according to the court documents. However, the court ruled in favor of the hotel, citing that Italian law does not mandate that restaurateurs or hotel owners serve tap water.",
+                "score": 0.07000458
+              },
+              {
+                "title": "VSIP joint venture gets green light for five new industrial parks - Vietnam Investment Review - VIR",
+                "url": "https://vir.com.vn/vsip-joint-venture-gets-green-light-for-five-new-industrial-parks-153814.html",
+                "source": "vir.com.vn",
+                "summary": "## Investing in Haiphong. The Vietnam Singapore Industrial Park joint venture has been granted investment registration certificates for five additional industrial parks across Vietnam. Under the newly approved investment plan, the VSIP joint venture will develop five new industrial parks in Haiphong, Nghe An, Hue, Ha Nam and Ho Chi Minh City. At the Vietnam-Singapore Tech Connect Forum, held in Singapore as part of the working visit by a high-ranking Vietnamese delegation led by Party General Secretary and State President To Lam, VSIP introduced the VSIP 2.0 model, signalling a strategic shift towards higher-value, innovation-driven ecosystems. Corporate CEO Talk Biz Link PR Newswire Media OutReach Newswire. Investing M&A Outbound Investment Investing in Haiphong. Your Consultant KPMG PwC Indochine Counsel Vilasia. Green Growth Energy Efficiency Rethinking Plastics BASF. Money Insurance Smart Payment Trends Stock Monitor. Timeout Travel Hotels & Restaurants The Insider Entertainment Lifestyle.",
+                "score": 0.054787528
+              },
+              {
+                "title": "Hotel’s refusal to serve guest tap water at restaurant is lawful, top Italian court rules - CNN",
+                "url": "https://www.cnn.com/2026/05/27/travel/italy-tap-water-hotel-ruling-scli-intl",
+                "source": "cnn.com",
+                "summary": "# Hotel’s refusal to serve guest tap water at restaurant is lawful, top Italian court rules. * A guest at a five-star Italian hotel sued after staff repeatedly refused to serve her tap water. * The case highlights cultural differences in tap water service between the United States and mainland Europe. A five-star hotel in Italy that repeatedly refused to serve a guest tap water at its restaurant did not break any laws, the country’s top court has ruled. The woman filed a lawsuit after hotel staff said they would only serve her bottled water during a stay at the end of 2019, according to a court ruling seen by CNN. However, the Supreme Court disagreed, ruling that the decision not to serve tap water was lawful. However, her lawsuit has now been rejected at the highest level of the Italian justice system, with the Supreme Court ruling that the country’s laws do not require restaurateurs or hotel owners to serve tap water.",
+                "score": 0.04574752
+              },
+              {
+                "title": "Hotel Villa Michelangelo Vicenza – Starhotels Collezione Unveils Newly Redesigned Rooms and Suites - Hospitality Net",
+                "url": "https://www.hospitalitynet.org/announcement/41014534/hotel-villa-michelangelo-vicenza-starhotels-collezione-unveils-newly-redesigned-rooms-and-suites",
+                "source": "hospitalitynet.org",
+                "summary": "# Hotel Villa Michelangelo Vicenza - Starhotels Collezione. ## Hotel Villa Michelangelo Vicenza – Starhotels Collezione Unveils Newly Redesigned Rooms and Suites. Nestled on the slopes of the Berici hills, **Hotel Villa Michelangelo Vicenza – Starhotels Collezione** has long been a peaceful retreat for travelers seeking authentic hospitality just minutes from the historic center of Vicenza. Today, following an ambitious **renovation of all rooms and suites,** the property introduces a refreshed visual identity rooted in the value of Italian craftsmanship and a concept of luxury defined by subtle yet unforgettable details. In line with Starhotels’ philosophy, the renovation places strong emphasis on local craftsmanship, bringing together artisans from Vicenza with trusted Piedmont-based makers as part of the Group’s contemporary patronage project ***La Grande Bellezza – The Dream Factory.*** Tappezzeria Bruscato, located just a short distance from the hotel, handled the production and installation of curtains and headboards, while Vicenza-based artist Giorgio Bertoldo created the wall decorations.",
+                "score": 0.036621105
+              }
+            ]
+          }
+        },
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "A25 Premium Hotel phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "A25 Premium Hotel phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - bgr.com",
+                "url": "https://www.bgr.com/2174135/cheap-samsung-phone-consumer-reports-recommends-buying/",
+                "source": "bgr.com",
+                "summary": "The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                "score": 0.07652507
+              },
+              {
+                "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - AOL.com",
+                "url": "https://www.aol.com/entertainment/300-samsung-phone-consumer-reports-204700467.html",
+                "source": "aol.com",
+                "summary": "# The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                "score": 0.07131274
+              },
+              {
+                "title": "The $300 Samsung Phone Consumer Reports Recommends Buying - AOL.com",
+                "url": "https://www.aol.com/articles/300-samsung-phone-consumer-reports-204700000.html",
+                "source": "aol.com",
+                "summary": "# The $300 Samsung Phone Consumer Reports Recommends Buying. The Galaxy A25 falls at the lower end of the spectrum and gets high marks from Consumer Reports. There definitely are some cheap Android phones that are worth buying, and the Galaxy A25 may be one to consider at $300. Price is one of the reasons that Consumer Reports rated the Galaxy A25 as one of the best smartphones of 2026. When it comes to price, you can find Galaxy phones both cheaper and more expensive than the A25, and even with the A25, prices can vary based on the the model and memory capacity you purchase. On Amazon, you can get a Samsung Galaxy A17 5G phone for $200. ## Specifications and features of the Samsung Galaxy A25 phone. Keep in mind that some specifics can vary based on the retailer you are purchasing the Galaxy A25 from, and there are perks of buying a Galaxy phone directly from Samsung itself.",
+                "score": 0.07115768
+              },
+              {
+                "title": "Week of May 18 Cable News Ratings: Holiday Weekend Brings a Mixed Bag - ADWEEK",
+                "url": "https://www.adweek.com/tvnewser/week-of-may-18-2026-cable-news-ratings/",
+                "source": "adweek.com",
+                "summary": "## Fox News was the only network with gains during primetime and total day. This is TVNewser’s basic cable network ranker and cable news report for the week of May 18, 2026. According to Nielsen big data + panel for the week of May 18, Fox News averaged 2.260 million total viewers and 207,000 A25-54 viewers during primetime. The network was down -1% in total viewers but grew by +2% in the demo compared to the week prior (the week beginning May 11). During total day, it finished first in total viewers and was No. 2 in the total day demo. It was down -1% in total viewers and -10% in the demo compared to the network’s average the week prior. CNN averaged 598,000 total primetime viewers and 108,000 A25-54 viewers during primetime for the week of May 18. * During primetime, Fox News was down by -7% in total viewers and -18% in the A25-54 demo.",
+                "score": 0.048699286
+              },
+              {
+                "title": "Here Are the Cable News Ratings for April 2026 - ADWEEK",
+                "url": "https://www.adweek.com/tvnewser/here-are-the-cable-news-ratings-for-april-2026/",
+                "source": "adweek.com",
+                "summary": "The newsy month resulted in CNN and MS NOW registering growth in total viewers and the Adults 25-54 demo, respectively, during primetime. According to Nielsen big data + panel, Fox News in April had 2.861 million total viewers in primetime and 284,000 viewers in the Adults 25-54 demo. During total day, it had 1.752 million total viewers and 172,000 viewers in the demo. Compared to its March 2026 performance, Fox News was down by -4% in total viewers and -12% in the A25-54 demo during primetime viewing hours. The network finished April in first place among total viewers and was No. 4 in the demo during primetime. MS NOW finished in second place in total viewers in primetime and total day, with 1.256 million and 747,000 viewers, respectively, in April. The network in the A25-54 demo had 135,000 viewers in primetime and 80,000 viewers during total day. During total day, it was down by -1% in total viewers and was flat in the demo.",
+                "score": 0.04048388
+              }
+            ]
+          }
+        },
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "Bom Homes - Vinhomes Times City phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Bom Homes - Vinhomes Times City phốt",
+            "topic": "news",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "12 Hartford residents displaced following Edgewood Street multi-family house fire, officials say - Greenwich Time",
+                "url": "https://www.greenwichtime.com/news/article/hartford-edgewood-st-12-residents-displaced-fire-22238850.php",
+                "source": "greenwichtime.com",
+                "summary": "HARTFORD — Seven adults and five children living in the city were displaced in an overnight fire that broke out at a multi-family residence, officials said. The Hartford Fire Department said crews responded to the fire at the three-story home in the 400 block of Edgewood Street around 1:06 a.m. Sunday. Crews found the fire on the residence's second floor, and it began extending to the third floor, the department said. 'Turning the home into a bomb': Police say CT burglar tried to cause explosion. Jessica loves all things Connecticut. 'Turning the home into a bomb': Police say CT burglar tried to cause explosion. Find the Best Near You. The best home remodelers in CT. Choose from the best home remodelers in CT and find a team that matches your style, not just your square footage. CT’s best garden centers to visit this winter. CT retirement communities are lovely places to call home. Treat yourself to a day of luxury at the best spas in CT.",
+                "score": 0.020695398
+              },
+              {
+                "title": "New York passes pied-à-terre tax for luxury NYC second homes - 6sqft",
+                "url": "https://www.6sqft.com/new-york-passes-pied-a-terre-tax-for-luxury-nyc-second-homes/",
+                "source": "6sqft.com",
+                "summary": "New York passes pied-à-terre tax for luxury NYC second homes. State lawmakers on Wednesday approved the $268.5 billion 2027 state budget, which included a new annual surcharge on second homes in the city valued at $5 million or more. First announced last month by Gov. Kathy Hochul, the new tax will take effect July 1 and could potentially generate $500 million in revenue for the city each year. For the first two years, starting July 1, co-ops and condos valued at $1 million or above by the city’s Department of Finance will face the tax. The city valued the home at $15.5 million for the 2026-2027 tax year. Under the new tax, as first reported by the New York Times, properties worth between $1 million and $3 million will see a 4 percent annual tax. Properties between $3 million and $5 million will face a 5.25 percent tax.",
+                "score": 0.020225683
+              },
+              {
+                "title": "World War II mortar round found in Enfield home, police setting up perimeter, officials say - Greenwich Time",
+                "url": "https://www.greenwichtime.com/journalinquirer/article/enfield-police-lake-dr-world-war-ii-mortar-shell-22286720.php",
+                "source": "greenwichtime.com",
+                "summary": "# World War II mortar round found in Enfield home, police setting up perimeter, officials say. ENFIELD — Police are setting up a perimeter around a Lake Drive home after officers discovered a World War II-era mortar round inside the building on Monday, officials say. In a post on Facebook at 4:53 p.m., the Enfield Police Department said the house has been vacated and a perimeter established around the home. Police said department personnel anticipate applying for a search warrant for this location and then utilizing bomb squad personnel to render the mortar round and the building safe. While the man was initially unwilling to speak with officers, police said, he eventually agreed to allow them a limited entry into his home solely for the purpose of taking possession of firearms inside the home while this investigation continued. That is when officers found what appeared to be at least one WWII-era mortar round inside the home. Find the Best Near You. The best home remodelers in CT.",
+                "score": 0.02008682
+              },
+              {
+                "title": "N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’ - The New York Times",
+                "url": "https://www.nytimes.com/2026/05/14/nyregion/nyc-second-home-tax-rates.html",
+                "source": "nytimes.com",
+                "summary": "# N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’ - The New York Times. New York|N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’. # N.Y.C. Second-Home Tax May Affect Homes With $1 Million ‘Market Value’. A proposed tax on high-end second homes in New York City is aimed at raising $500 million a year to help address the city’s budget deficit.Credit...Karsten Moran for The New York Times. A new tax surcharge on the second homes of wealthy part-time residents of New York City would initially target properties that have a “market value” of at least $1 million, according to a plan that Gov. Kathy Hochul proposed to state legislative leaders on Thursday. The governor’s office claims that a $1 million “market value” is the equivalent to a sales value of about $5 million. According to the governor’s office, a second-home condominium with a sales value of $18.5 million might have a “market value” of $1.1 million.",
+                "score": 0.01981188
+              },
+              {
+                "title": "How Mamdani and Hochul Are Solving New York City’s Budget Crisis - The New York Times",
+                "url": "https://www.nytimes.com/2026/05/12/nyregion/mamdani-budget-nyc.html",
+                "source": "nytimes.com",
+                "summary": "# How Mamdani and Hochul Are Solving New York City’s Budget Crisis - The New York Times. # How Mamdani and Hochul Are Solving New York City’s Budget Crisis. A generous influx of state resources from Gov. Kathy Hochul and a new tax on luxury second homes will help Mayor Zohran Mamdani balance a $125 billion budget. In his executive budget, Mayor Zohran Mamdani dropped his threat to raise property taxes in New York City.Credit...Victor J. Blue for The New York Times. Sally Goldenberg is a Times reporter covering New York City politics and government. Dana Rubinstein covers New York City politics and government for The Times. Benjamin Oreskes is a reporter covering New York State politics and government for The Times. A version of this article appears in print on May 13, 2026, Section A, Page 20 of the New York edition with the headline: How the State Is Helping New York City Solve Its Budgetary Crisis.",
+                "score": 0.019540632
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:22:05"
+    },
+    {
+      "turn_index": 8,
+      "started_at": "2026-06-02T17:22:47",
+      "user": "những khách sạn nào nên tránh ở khu vực chân cầu vĩnh tuy",
+      "status": "answered",
+      "assistant_text": "Hiện tại, không có thông tin cụ thể nào về các khách sạn nên tránh ở khu vực chân cầu Vĩnh Tuy. Tuy nhiên, dưới đây là một số thông tin liên quan mà bạn có thể tham khảo:\n\n1. **Khách sạn A69**: Có một số video trên TikTok về khách sạn này, nhưng không có đánh giá cụ thể nào về chất lượng dịch vụ hay phốt liên quan. Bạn có thể xem thêm tại [A69 Hotel Vĩnh Tuy](https://www.tiktok.com/discover/a69-hotel-v%C4%A9nh-tuy-hai-b%C3%A0-tr%C6%B0ng-h%C3%A0-n%E1%BB%99i).\n\n2. **Khách sạn Vĩnh Tuy**: Một số khách sạn nổi bật trong khu vực này bao gồm Bom Homes - Vinhomes Times City và A25 Premium Hotel. Tuy nhiên, không có thông tin cụ thể nào về phốt của các khách sạn này trong tháng qua. Bạn có thể tham khảo thêm tại [Traveloka](https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333).\n\n3. **Thông tin chung**: Một bài viết trên blog du lịch mô tả khu vực chân cầu Vĩnh Tuy là một điểm đến quen thuộc với không gian thoáng đãng và vị trí giao thông thuận lợi, nhưng không đề cập đến các khách sạn cụ thể nên tránh. Bạn có thể đọc thêm tại [Du Lịch Sóc Trăng](https://soctrangtourism.vn/chan-cau-vinh-tuy-o-dau).\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "web_search",
+              "args": {
+                "query": "khách sạn nên tránh khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "web_search",
+              "args": {
+                "query": "khách sạn nên tránh khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "khách sạn nên tránh khu vực chân cầu Vĩnh Tuy",
+                "topic": "general",
+                "timeframe": "month",
+                "items": [
+                  {
+                    "title": "Chân Cầu Vĩnh Tuy Ở Đâu? Khám Phá Vị Trí & Tiện Ích Lân Cận - Du Lịch Sóc Trăng - Blog Kiến Thức Du Lịch",
+                    "url": "https://soctrangtourism.vn/chan-cau-vinh-tuy-o-dau",
+                    "source": "soctrangtourism.vn",
+                    "summary": "Đăng vào  bởi Xun Hoa. Chn cầu Vĩnh Tuy là một điểm đến quen thuộc của người dn Hà Nội, nổi bật với không gian thoáng đãng và vị trí giao thông thuận lợi. Bài viết này sẽ giúp bạn khám phá chi tiết về vị trí địa lý chính xác của chn cầu Vĩnh Tuy, vai trò kết nối giao thông quan trọng mà cy cầu này đảm nhiệm, cũng như những hoạt động giải trí và tiện ích hấp dẫn đang hiện hữu tại khu vực này. **Chn cầu Vĩnh Tuy nằm ở đu tại Hà Nội?** Chn cầu Vĩnh Tuy tọa lạc tại khu vực giao cắt quan trọng giữa quận Long Biên và quận Hai Bà Trưng, là một phần không thể thiếu trong hệ thống giao thông thủ đô. Cụ thể, cầu Vĩnh Tuy có hai chn chính: một chn nằm trên địa phận phường Long Biên, quận Long Biên và chn còn lại thuộc phường Vĩnh Tuy, quận Hai Bà Trưng.",
+                    "score": 0.9971771
+                  },
+                  {
+                    "title": "Khách sạn Vĩnh Tuy-Quận Hai Bà Trưng Hà Nội, giảm tới 30%",
+                    "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333",
+                    "source": "traveloka.com",
+                    "summary": "# Khách sạn Vĩnh Tuy. Hãy khám phá những khách sạn tốt nhất tại Vĩnh Tuy, để bắt đầu chuyến hành trình kì diệu của bạn. ## Khách sạn phổ biến ở Vĩnh Tuy. Xem qua những khách sạn nổi bật và các đánh giá gần đy về nơi lưu trú này. Một số khách sạn nổi bật tại Vĩnh Tuy bao gồm Bom Homes - Vinhomes Times City, Full House Times City , A25 Premium Hotel, Unique & Creative Residence Center 24h, Vinhomes Times City 2 Bedrooms Apartment, RIVA TROPICAL House Hanoi, Căn hộ Park Hill Times City, Vinhomes Times City Full Service Apartment, Vinhomes Times City by Emily in Town, Park 12 Homestay dành cho chuyên gia & khách du lịch toàn cầu, Vinhomes Times City Delicate Residence, A25 Luxury Hotel, VEQUE Garden Living, A25 Hotel & Spa - Hà Nội, [Phù hợp với doanh nhn] Căn hộ Vinhomes Times City & Park Hills – By VN Stay, Vinhomes Times City - HN Land, Unique Creative Apartment w Sky View, Sunny - Vinhomes Times City & Park Hill, NVT Housing - Vinhomes Times City, Vinhomes Time city & Park Hill - Green Home, Jenny's Splendid Home, được du khách đánh giá cao với điểm số trung bình - sao từ 0 lượt đánh giá.",
+                    "score": 0.99528164
+                  },
+                  {
+                    "title": "A69 Hotel Vĩnh Tuy Hai Bà Trưng Hà Nội - TikTok",
+                    "url": "https://www.tiktok.com/discover/a69-hotel-v%C4%A9nh-tuy-hai-b%C3%A0-tr%C6%B0ng-h%C3%A0-n%E1%BB%99i",
+                    "source": "tiktok.com",
+                    "summary": "Khám phá khách sạn A69 tại Vĩnh Tuy, Hai Bà Trưng, Hà Nội. Trải nghiệm không gian sống sang trọng và tiện nghi.Xem thêm video về Hoi An Vietnam Hotels,",
+                    "score": 0.9339146
+                  },
+                  {
+                    "title": "Góc nhìn trưa nay: 85 người thuê khách sạn lập ổ lừa đảo công ...",
+                    "url": "https://www.facebook.com/baotuoitre/videos/g%C3%B3c-nh%C3%ACn-tr%C6%B0a-nay-85-ng%C6%B0%E1%BB%9Di-thu%C3%AA-kh%C3%A1ch-s%E1%BA%A1n-l%E1%BA%ADp-%E1%BB%95-l%E1%BB%ABa-%C4%91%E1%BA%A3o-c%C3%B4ng-ngh%E1%BB%87-con-s%C3%A1t-h%E1%BA%A1i-ch/848986351063040",
+                    "source": "facebook.com",
+                    "summary": "Khu vực mỏ đá này hiện đang có nguy cơ sạt lở mất an toàn ông phó chủ tịch ... Vĩnh Long. Khi trên đường đi đến địa điểm trên thì xảy ra vụ việc thưa",
+                    "score": 0.85195273
+                  },
+                  {
+                    "title": "Khách sạn gần Tây Thiên Pagoda, Discount tới 30%",
+                    "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/landmark/tay-thien-pagoda-91563791619031",
+                    "source": "traveloka.com",
+                    "summary": "# Khách sạn gần Ty Thiên Pagoda. Hãy khám phá những khách sạn tốt nhất tại Ty Thiên Pagoda, để bắt đầu chuyến hành trình kì diệu của bạn. 4. 63Khách sạn ở Huyện Tam Đảo. ## Khách sạn phổ biến gần Ty Thiên Pagoda. Xem qua những khách sạn nổi bật và các đánh giá gần đy về nơi lưu trú này. ### Hotel de l’Amour Tam Dao. Tam Dao Township, Tam Dao District. ### Venus Hotel Tam Dao. Tam Dao Township, Tam Dao District. ### Chan May Hotel Tam Dao. Tam Dao Township, Tam Dao District. ### Stellar Tam Dao. Tam Dao Township, Tam Dao District.",
+                    "score": 0.04115289
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, không có thông tin cụ thể nào về các khách sạn nên tránh ở khu vực chân cầu Vĩnh Tuy. Tuy nhiên, dưới đây là một số thông tin liên quan mà bạn có thể tham khảo:\n\n1. **Khách sạn A69**: Có một số video trên TikTok về khách sạn này, nhưng không có đánh giá cụ thể nào về chất lượng dịch vụ hay phốt liên quan. Bạn có thể xem thêm tại [A69 Hotel Vĩnh Tuy](https://www.tiktok.com/discover/a69-hotel-v%C4%A9nh-tuy-hai-b%C3%A0-tr%C6%B0ng-h%C3%A0-n%E1%BB%99i).\n\n2. **Khách sạn Vĩnh Tuy**: Một số khách sạn nổi bật trong khu vực này bao gồm Bom Homes - Vinhomes Times City và A25 Premium Hotel. Tuy nhiên, không có thông tin cụ thể nào về phốt của các khách sạn này trong tháng qua. Bạn có thể tham khảo thêm tại [Traveloka](https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333).\n\n3. **Thông tin chung**: Một bài viết trên blog du lịch mô tả khu vực chân cầu Vĩnh Tuy là một điểm đến quen thuộc với không gian thoáng đãng và vị trí giao thông thuận lợi, nhưng không đề cập đến các khách sạn cụ thể nên tránh. Bạn có thể đọc thêm tại [Du Lịch Sóc Trăng](https://soctrangtourism.vn/chan-cau-vinh-tuy-o-dau).\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "web_search",
+          "args": {
+            "query": "khách sạn nên tránh khu vực chân cầu Vĩnh Tuy",
+            "topic": "general",
+            "timeframe": "month",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "khách sạn nên tránh khu vực chân cầu Vĩnh Tuy",
+            "topic": "general",
+            "timeframe": "month",
+            "items": [
+              {
+                "title": "Chân Cầu Vĩnh Tuy Ở Đâu? Khám Phá Vị Trí & Tiện Ích Lân Cận - Du Lịch Sóc Trăng - Blog Kiến Thức Du Lịch",
+                "url": "https://soctrangtourism.vn/chan-cau-vinh-tuy-o-dau",
+                "source": "soctrangtourism.vn",
+                "summary": "Đăng vào  bởi Xun Hoa. Chn cầu Vĩnh Tuy là một điểm đến quen thuộc của người dn Hà Nội, nổi bật với không gian thoáng đãng và vị trí giao thông thuận lợi. Bài viết này sẽ giúp bạn khám phá chi tiết về vị trí địa lý chính xác của chn cầu Vĩnh Tuy, vai trò kết nối giao thông quan trọng mà cy cầu này đảm nhiệm, cũng như những hoạt động giải trí và tiện ích hấp dẫn đang hiện hữu tại khu vực này. **Chn cầu Vĩnh Tuy nằm ở đu tại Hà Nội?** Chn cầu Vĩnh Tuy tọa lạc tại khu vực giao cắt quan trọng giữa quận Long Biên và quận Hai Bà Trưng, là một phần không thể thiếu trong hệ thống giao thông thủ đô. Cụ thể, cầu Vĩnh Tuy có hai chn chính: một chn nằm trên địa phận phường Long Biên, quận Long Biên và chn còn lại thuộc phường Vĩnh Tuy, quận Hai Bà Trưng.",
+                "score": 0.9971771
+              },
+              {
+                "title": "Khách sạn Vĩnh Tuy-Quận Hai Bà Trưng Hà Nội, giảm tới 30%",
+                "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/area/vnh-tuy-ward-30011333",
+                "source": "traveloka.com",
+                "summary": "# Khách sạn Vĩnh Tuy. Hãy khám phá những khách sạn tốt nhất tại Vĩnh Tuy, để bắt đầu chuyến hành trình kì diệu của bạn. ## Khách sạn phổ biến ở Vĩnh Tuy. Xem qua những khách sạn nổi bật và các đánh giá gần đy về nơi lưu trú này. Một số khách sạn nổi bật tại Vĩnh Tuy bao gồm Bom Homes - Vinhomes Times City, Full House Times City , A25 Premium Hotel, Unique & Creative Residence Center 24h, Vinhomes Times City 2 Bedrooms Apartment, RIVA TROPICAL House Hanoi, Căn hộ Park Hill Times City, Vinhomes Times City Full Service Apartment, Vinhomes Times City by Emily in Town, Park 12 Homestay dành cho chuyên gia & khách du lịch toàn cầu, Vinhomes Times City Delicate Residence, A25 Luxury Hotel, VEQUE Garden Living, A25 Hotel & Spa - Hà Nội, [Phù hợp với doanh nhn] Căn hộ Vinhomes Times City & Park Hills – By VN Stay, Vinhomes Times City - HN Land, Unique Creative Apartment w Sky View, Sunny - Vinhomes Times City & Park Hill, NVT Housing - Vinhomes Times City, Vinhomes Time city & Park Hill - Green Home, Jenny's Splendid Home, được du khách đánh giá cao với điểm số trung bình - sao từ 0 lượt đánh giá.",
+                "score": 0.99528164
+              },
+              {
+                "title": "A69 Hotel Vĩnh Tuy Hai Bà Trưng Hà Nội - TikTok",
+                "url": "https://www.tiktok.com/discover/a69-hotel-v%C4%A9nh-tuy-hai-b%C3%A0-tr%C6%B0ng-h%C3%A0-n%E1%BB%99i",
+                "source": "tiktok.com",
+                "summary": "Khám phá khách sạn A69 tại Vĩnh Tuy, Hai Bà Trưng, Hà Nội. Trải nghiệm không gian sống sang trọng và tiện nghi.Xem thêm video về Hoi An Vietnam Hotels,",
+                "score": 0.9339146
+              },
+              {
+                "title": "Góc nhìn trưa nay: 85 người thuê khách sạn lập ổ lừa đảo công ...",
+                "url": "https://www.facebook.com/baotuoitre/videos/g%C3%B3c-nh%C3%ACn-tr%C6%B0a-nay-85-ng%C6%B0%E1%BB%9Di-thu%C3%AA-kh%C3%A1ch-s%E1%BA%A1n-l%E1%BA%ADp-%E1%BB%95-l%E1%BB%ABa-%C4%91%E1%BA%A3o-c%C3%B4ng-ngh%E1%BB%87-con-s%C3%A1t-h%E1%BA%A1i-ch/848986351063040",
+                "source": "facebook.com",
+                "summary": "Khu vực mỏ đá này hiện đang có nguy cơ sạt lở mất an toàn ông phó chủ tịch ... Vĩnh Long. Khi trên đường đi đến địa điểm trên thì xảy ra vụ việc thưa",
+                "score": 0.85195273
+              },
+              {
+                "title": "Khách sạn gần Tây Thiên Pagoda, Discount tới 30%",
+                "url": "https://www.traveloka.com/vi-vn/hotel/vietnam/landmark/tay-thien-pagoda-91563791619031",
+                "source": "traveloka.com",
+                "summary": "# Khách sạn gần Ty Thiên Pagoda. Hãy khám phá những khách sạn tốt nhất tại Ty Thiên Pagoda, để bắt đầu chuyến hành trình kì diệu của bạn. 4. 63Khách sạn ở Huyện Tam Đảo. ## Khách sạn phổ biến gần Ty Thiên Pagoda. Xem qua những khách sạn nổi bật và các đánh giá gần đy về nơi lưu trú này. ### Hotel de l’Amour Tam Dao. Tam Dao Township, Tam Dao District. ### Venus Hotel Tam Dao. Tam Dao Township, Tam Dao District. ### Chan May Hotel Tam Dao. Tam Dao Township, Tam Dao District. ### Stellar Tam Dao. Tam Dao Township, Tam Dao District.",
+                "score": 0.04115289
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-06-02T17:22:58"
+    }
+  ]
+}

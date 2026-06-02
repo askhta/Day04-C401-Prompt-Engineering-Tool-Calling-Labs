@@ -1,7 +1,183 @@
 {
-  "dataset_id": "day04_v2_research_group",
+  "dataset_id": "travel_reputation_research_group",
   "dataset_role": "group",
-  "description": "Case do NHÓM tự viết thêm để cover thêm trường hợp. Mỗi case cần: id, phase='B', query HOẶC turns, failure_type (thuộc allowed_failure_types), và expect (tool_calls[...] hoặc no_tool=true). Nên kèm metadata.what_it_tests.",
-  "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
-  "cases": []
+  "description": "Team eval cases for Travel Reputation & Customer Response Agent. These cases test tourism PR/complaint monitoring, URL classification, Twitter routing, missing information, direct customer-response drafting, Telegram confirmation, and multi-turn carryover.",
+  "allowed_failure_types": [
+    "wrong_tool",
+    "wrong_arg_value",
+    "wrong_boundary",
+    "unnecessary_tool",
+    "out_of_scope",
+    "missing_info"
+  ],
+  "cases": [
+    {
+      "id": "travel_rep_001_missing_service",
+      "phase": "B",
+      "suite": "group",
+      "query": "Theo dõi phốt gần đây trong ngành du lịch giúp tôi",
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "ask_user",
+            "args": {
+              "response_type": "text"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent must ask for tourism service/brand/destination and timeframe instead of guessing."
+      }
+    },
+    {
+      "id": "travel_rep_002_web_negative_hotel",
+      "phase": "B",
+      "suite": "group",
+      "query": "Tìm các bài viết tiêu cực gần đây về Khách sạn Biển Xanh ở Đà Nẵng trong tuần này và tóm tắt rủi ro truyền thông",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "web_search",
+            "args": {
+              "timeframe": "week"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent should use web_search for public web/blog/news coverage about a hotel reputation issue and keep timeframe=week."
+      }
+    },
+    {
+      "id": "travel_rep_003_read_pr_url",
+      "phase": "B",
+      "suite": "group",
+      "query": "Đọc URL này và phân loại xem đây là bài PR, review trung lập hay phản ánh tiêu cực: https://example.com/travel-review",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "read_url",
+            "args": {
+              "url": "https://example.com/travel-review"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent should call read_url when the user provides a specific URL, not web_search."
+      }
+    },
+    {
+      "id": "travel_rep_004_search_tweets_about_restaurant",
+      "phase": "B",
+      "suite": "group",
+      "query": "Tìm các tweet gần đây nói về Nhà hàng Hải Sản Xanh và phân loại phản hồi tích cực, tiêu cực, trung lập",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "search_tweets",
+            "args": {
+              "search_type": "Latest"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent should use search_tweets for posts ABOUT a restaurant or travel service."
+      }
+    },
+    {
+      "id": "travel_rep_005_get_posts_from_official_account",
+      "phase": "B",
+      "suite": "group",
+      "query": "Lấy 5 tweet gần đây từ tài khoản chính thức @VietnamAirlines",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "get_user_tweets",
+            "args": {
+              "screenname": "VietnamAirlines",
+              "limit": 5
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent should use get_user_tweets for posts FROM a known official account and remove the @ sign."
+      }
+    },
+    {
+      "id": "travel_rep_006_direct_customer_response_no_tool",
+      "phase": "B",
+      "suite": "group",
+      "query": "Khách phàn nàn rằng phòng khách sạn không sạch và nhân viên lễ tân trả lời chậm. Hãy gợi ý một phản hồi lịch sự cho khách hàng.",
+      "failure_type": "unnecessary_tool",
+      "expect": {
+        "no_tool": true,
+        "behavior": "answer_without_tool"
+      },
+      "metadata": {
+        "what_it_tests": "If complaint context is already provided and no external research is needed, agent should draft a response without calling tools."
+      }
+    },
+    {
+      "id": "travel_rep_007_telegram_confirmation",
+      "phase": "B",
+      "suite": "group",
+      "query": "Gửi cảnh báo rủi ro truyền thông về khách sạn này lên Telegram giúp tôi",
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "ask_user",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Agent must ask for explicit confirmation before calling send_telegram."
+      }
+    },
+    {
+      "id": "travel_rep_008_multiturn_missing_then_web",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Theo dõi các bài phản ánh tiêu cực gần đây giúp tôi"
+        },
+        {
+          "role": "user",
+          "content": "Về Nhà hàng Hải Sản Xanh ở Hạ Long"
+        },
+        {
+          "role": "user",
+          "content": "Giữ phạm vi 7 ngày gần đây và tìm trên web"
+        }
+      ],
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "web_search",
+            "args": {
+              "timeframe": "week"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn carryover: service/location are supplied in earlier turns and latest turn chooses web with 7-day timeframe."
+      }
+    }
+  ]
 }
